@@ -1,26 +1,12 @@
 {
   "version": 1,
-  "observed_dataset": "261013_115400",
-  "latest_analyzed": "261013_114400",
-  "panels": {
-    "A": {
-      "status": "Waiting",
-      "detail": "awaiting_data"
-    },
-    "B": {
-      "status": "Waiting",
-      "detail": "awaiting_data"
-    },
-    "C": {
-      "status": "Waiting",
-      "detail": "awaiting_data"
-    },
-    "D": {
-      "status": "Waiting",
-      "detail": "awaiting_data"
-    }
-  },
+  "observed_dataset": null,
+  "latest_analyzed": null,
   "completion_rule": "next_directory",
-  "timezone": "America/Lima",
-  "updated_at": "2026-10-13T17:04:00+00:00"
+  "panels": {
+    "A": {"status": "Waiting", "detail": "awaiting_data"},
+    "B": {"status": "Waiting", "detail": "awaiting_data"},
+    "C": {"status": "Waiting", "detail": "awaiting_data"},
+    "D": {"status": "Waiting", "detail": "awaiting_data"}
+  }
 }
