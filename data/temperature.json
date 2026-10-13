@@ -3,129 +3,159 @@
   "unit": "celsius",
   "samples": [
     {
-      "timestamp": "2026-10-12T22:45:56+00:00",
+      "timestamp": "2026-10-13T16:39:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.53
     },
     {
-      "timestamp": "2026-10-12T22:45:57+00:00",
+      "timestamp": "2026-10-13T16:40:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.52
     },
     {
-      "timestamp": "2026-10-12T22:45:58+00:00",
+      "timestamp": "2026-10-13T16:41:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.52
     },
     {
-      "timestamp": "2026-10-12T22:45:59+00:00",
+      "timestamp": "2026-10-13T16:42:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.51
     },
     {
-      "timestamp": "2026-10-12T22:46:00+00:00",
+      "timestamp": "2026-10-13T16:43:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.54
     },
     {
-      "timestamp": "2026-10-12T22:46:01+00:00",
+      "timestamp": "2026-10-13T16:44:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.52
     },
     {
-      "timestamp": "2026-10-12T22:46:02+00:00",
+      "timestamp": "2026-10-13T16:45:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.56
     },
     {
-      "timestamp": "2026-10-12T22:46:03+00:00",
+      "timestamp": "2026-10-13T16:46:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.5
     },
     {
-      "timestamp": "2026-10-12T22:46:04+00:00",
+      "timestamp": "2026-10-13T16:47:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.52
     },
     {
-      "timestamp": "2026-10-12T22:46:05+00:00",
+      "timestamp": "2026-10-13T16:48:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.6
     },
     {
-      "timestamp": "2026-10-12T22:46:06+00:00",
+      "timestamp": "2026-10-13T16:49:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.56
     },
     {
-      "timestamp": "2026-10-12T22:46:07+00:00",
+      "timestamp": "2026-10-13T16:50:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.59
     },
     {
-      "timestamp": "2026-10-12T22:46:08+00:00",
+      "timestamp": "2026-10-13T16:51:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.65
     },
     {
-      "timestamp": "2026-10-12T22:46:10+00:00",
+      "timestamp": "2026-10-13T16:52:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.66
     },
     {
-      "timestamp": "2026-10-12T22:46:11+00:00",
+      "timestamp": "2026-10-13T16:53:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.64
     },
     {
-      "timestamp": "2026-10-12T22:46:12+00:00",
+      "timestamp": "2026-10-13T16:54:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.6
     },
     {
-      "timestamp": "2026-10-12T22:46:13+00:00",
+      "timestamp": "2026-10-13T16:55:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.63
     },
     {
-      "timestamp": "2026-10-12T22:46:14+00:00",
+      "timestamp": "2026-10-13T16:56:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.63
     },
     {
-      "timestamp": "2026-10-12T22:46:15+00:00",
+      "timestamp": "2026-10-13T16:57:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.56
     },
     {
-      "timestamp": "2026-10-12T22:46:16+00:00",
+      "timestamp": "2026-10-13T16:58:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.57
     },
     {
-      "timestamp": "2026-10-12T22:46:17+00:00",
+      "timestamp": "2026-10-13T16:59:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.65
     },
     {
-      "timestamp": "2026-10-12T22:46:18+00:00",
+      "timestamp": "2026-10-13T17:00:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.6
     },
     {
-      "timestamp": "2026-10-12T22:46:19+00:00",
+      "timestamp": "2026-10-13T17:01:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.67
     },
     {
-      "timestamp": "2026-10-12T22:46:20+00:00",
+      "timestamp": "2026-10-13T17:02:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.72
     },
     {
-      "timestamp": "2026-10-12T22:46:21+00:00",
+      "timestamp": "2026-10-13T17:03:00+00:00",
       "sensor": "PT100",
-      "celsius": 25.4
+      "celsius": 25.64
+    },
+    {
+      "timestamp": "2026-10-13T17:04:00+00:00",
+      "sensor": "PT100",
+      "celsius": 25.63
+    },
+    {
+      "timestamp": "2026-10-13T17:05:00+00:00",
+      "sensor": "PT100",
+      "celsius": 25.57
+    },
+    {
+      "timestamp": "2026-10-13T17:06:00+00:00",
+      "sensor": "PT100",
+      "celsius": 25.54
+    },
+    {
+      "timestamp": "2026-10-13T17:07:00+00:00",
+      "sensor": "PT100",
+      "celsius": 25.51
+    },
+    {
+      "timestamp": "2026-10-13T17:08:00+00:00",
+      "sensor": "PT100",
+      "celsius": 25.51
+    },
+    {
+      "timestamp": "2026-10-13T17:09:00+00:00",
+      "sensor": "PT100",
+      "celsius": 25.56
     }
   ],
   "source_state": "ready"
