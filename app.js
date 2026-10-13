@@ -430,7 +430,7 @@ async function refresh() {
       return data;
     }));
     const manifest = results[0].status === "fulfilled" ? results[0].value : null;
-    // reset_test.sh publishes []: clear an already-open dashboard as well as a fresh page.
+    // A deployment reset publishes []: clear open dashboards as well as fresh pages.
     const resetHistory = Array.isArray(manifest) && manifest.length === 0;
     const history = resetHistory
       ? {datasets:[], latest:null, timezone:state.history.timezone || CONFIG.timezone} : manifest;

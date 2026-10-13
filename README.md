@@ -10,13 +10,10 @@ Python 3.10+ is required. From the original workspace:
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 
-# Offline test: move timestamped directories into raw_data/ one at a time.
-.venv/bin/python Multi_ch_analysis.py --watch raw_data --poll 10 --no-push
-
 # Continuous analysis and automatic commit/push to origin/main.
 .venv/bin/python Multi_ch_analysis.py --watch raw_data --poll 10 --branch main
 
-# Optional receiver, with its output in the same raw directory.
+# Receiver: run in another terminal, with its output in the same raw directory.
 .venv/bin/python Running_Receiver.py --output raw_data --chunk-size 600
 ```
 
@@ -24,37 +21,21 @@ Use an absolute path after `--watch` for an external raw data directory. Raw dat
 
 Watch mode runs without Tkinter dialogs. Existing manual modes remain available, for example `-d /path/to/chunk --mode merged --start 1 --end 17 --plot-format html`. Manual analysis writes beside the raw data and does not publish. The old pickle module caches are no longer used because they could suppress regenerated plots or mix analysis contexts.
 
-## Synchronized test without hardware
+## Prepare the field computer
 
-The local `sync_test_maker.py` helper copies one old acquisition's `.bin` files into three directories under `test_ready/`, starting at today's current minute in `America/Lima`, ten minutes apart. It preserves binary contents and filenames, gives the copies fresh modification times, and leaves the source untouched. Old caches and plots are not copied. The generated `pt100_sync.csv` has only `timestamp,celsius`, with UTC offsets and slight temperature variations between 25 and 26 °C. Its 31 one-minute readings cover first start minus five minutes through third start plus five minutes, inclusive.
+The Pages repository contains only the website. Alongside its `main` checkout, copy `Multi_ch_analysis.py`, `Running_Receiver.py`, `modules/`, `tambo_monitor/`, `requirements.txt`, and `clean_deploy.sh` from this workspace. These local toolkit files are ignored by Git and will not arrive with a clone. Create a new virtual environment on the field computer using the installation commands above; do not reuse this computer's `.venv/`. Configure Git author information and authentication for `origin` before the first publication.
 
-```sh
-.venv/bin/python sync_test_maker.py raw_data/261005_181106
-
-# Optional: choose today's first acquisition time and repeatable temperatures.
-.venv/bin/python sync_test_maker.py /path/to/old_data/261005_120000 \
-  --start-time 12:00:00 --spacing-minutes 10 --seed 42
-```
-
-Run one example, then follow the exact watcher and move commands printed by the script. Stop an existing watcher first. Point `--temperature-source` directly at `pt100_sync.csv` so other sensor logs do not affect this test. Move only the first ready directory into `raw_data/`: it must wait. Move the second to release the first; after analysis, move the third to release the second. No real ten-minute waits are required. The third directory stays pending under N−1; the CSV covers the entire acquisition intervals of both analyzed datasets. The CSV is generated all at once; this tests synchronized plots and temperature loading, not timed sensor appends.
-
-Use a watch directory with no newer datasets. Already-present older datasets can also be analyzed, and current timestamps trigger normal 24-hour plot pruning. The printed command uses `--no-push` for local testing; this still updates local `data/`. Preview with `.venv/bin/python -m http.server 8000`. To include GitHub publication, replace `--no-push` with `--branch main`. Match `CONFIG.chunkSizeSeconds` in `app.js` to `60 * --spacing-minutes` (default 600). Later folders and CSV samples naturally roll into the next day if the selected start is near midnight.
-
-Outputs are never overwritten: for another run, choose an unused `--start-time` and a different `--temperature-csv` path, or move previous outputs aside. `--output-dir`, `--timezone`, and `--seed` are also configurable; run `--help` for details. The helper, ready binaries, and source CSV remain local and are excluded from the dashboard Git repository.
-
-### Reset before another test
-
-Run the local helper from the workspace (it also accepts `bash reset_test.sh`):
+Immediately before connecting the real hardware, run once from the workspace:
 
 ```sh
-sh reset_test.sh
+sh clean_deploy.sh
 ```
 
-The script stops your user's running `Multi_ch_analysis.py` Python processes with SIGTERM and waits for them to exit, removes `.tambo-state/`, empties `data/plots/` while keeping the directory, writes `[]` to `data/history_index.json`, and sets all four panels to Waiting. It then stages only `data/`, commits with `Reset test environment`, and pushes to `origin main`. GitHub Pages clears the plot history after deployment and the dashboard's next refresh; this is not instantaneous. Terminal messages use colors when connected to a terminal.
+This permanently deletes `.tambo-state/` and everything inside `raw_data/` and `data/plots/`, while keeping the two empty directories. It first stops this user's analysis and receiver processes, including receiver workers, and waits for their exit. It resets history to `[]`, temperature to an empty Waiting series, and all four panels to Waiting. It stages only `data/`, commits as `Clean deployment state for hardware installation`, and pushes to `origin main`. GitHub Pages updates after deployment and the dashboard refreshes; the operation does not erase past Git commits.
 
-Run on `main` with Git authentication configured and no unrelated staged changes. If push fails, the local reset remains committed: fix the reported Git error and retry `git push origin main` or rerun the helper. An already-committed reset skips the empty commit and still pushes. If an analysis process does not exit within ten seconds, cleanup stops before deleting state.
+Run on `main` with no unrelated staged changes. The script stops before deletion if a process cannot exit or immediately restarts; disable any service manager before running it. A failed push leaves the local reset committed: fix the Git error and retry `git push origin main` or rerun the script. Repeated runs skip empty commits and still retry publication. This resets the default workspace paths; any custom external raw/state directories or sensor log sources must be prepared separately.
 
-Raw datasets, `test_ready/`, source temperature CSVs, `data/temperature.json`, and shared Plotly assets are retained. Move previous datasets out of the watched directory before the next test: clearing the ledger makes them eligible for analysis again. The reset helper stays local, like the Python acquisition toolkit.
+Then connect the panels, start the receiver and watcher in separate terminals using the commands above, and point `--temperature-source` at a fresh real PT100 log file/directory. Keep the field computer's timezone (used by the receiver), the watcher's `--timezone`, and `CONFIG.timezone` consistent; the default is `America/Lima`. Match `CONFIG.chunkSizeSeconds` to the receiver's `--chunk-size` (default 600 seconds). The newest acquisition still waits for its successor under the N−1 rule.
 
 ## Completion and analysis
 
@@ -87,7 +68,7 @@ All 15 combinations appear in the manifest. The actual number of plots varies wi
 
 A dataset is installed atomically after analysis succeeds. The private `.tambo-state/state.json` ledger survives restarts and remains after plots expire, preventing repeated analysis. Failures retry without becoming completed. A completed manifest allows recovery if the process crashes just before the ledger is saved. Only one watcher may use a state directory. Keep the state directory on the same filesystem as the site for atomic installation.
 
-History and plot retention use an inclusive 24-hour interval relative to the **latest analyzed dataset timestamp**, not the computer clock. Raw data is never deleted. Directory timestamps use `--timezone America/Lima` by default; use the receiver's actual timezone if different.
+History and plot retention use an inclusive 24-hour interval relative to the **latest analyzed dataset timestamp**, not the computer clock. The watcher never deletes raw data; `clean_deploy.sh` explicitly clears it during installation. Directory timestamps use `--timezone America/Lima` by default; use the receiver's actual timezone if different.
 
 ## Status and temperature
 
@@ -110,9 +91,9 @@ timestamp,celsius
 Connect either one file or a directory containing rotating logs:
 
 ```sh
-# Follow one CSV (including the sample file in the acquisition workspace).
+# Follow the CSV produced by your real PT100 logger.
 .venv/bin/python Multi_ch_analysis.py --watch raw_data --poll 10 --branch main \
-  --temperature-source pt100_20261012_174554.csv
+  --temperature-source /path/to/pt100-logs/pt100_current.csv
 
 # Merge every pt100_*.csv log in a directory; newly created files are discovered automatically.
 .venv/bin/python Multi_ch_analysis.py --watch raw_data --poll 10 --branch main \
@@ -174,12 +155,6 @@ Plotly HTML files share one local versioned JavaScript bundle, using the [suppor
 
 ```sh
 .venv/bin/python -m unittest discover -s tests -v
-PYTHONPATH=. .venv/bin/python tests/synthetic_pipeline.py /tmp/tambo-test
-# Optional browser checks (requires Playwright and Chrome):
-PYTHONPATH=. .venv/bin/python tests/browser_temperature.py
-PYTHONPATH=. .venv/bin/python tests/browser_reset.py
 ```
 
-Tests cover N−1 completion, invalid names, restarts, panel retention, analysis retry, committed-but-unpushed recovery, and publication isolation. Temperature tests cover two-column CSVs, live appends without panel activity, sensor-relative retention, minute-by-minute point preservation, partial rows, rotating logs, overlapping timestamps, invalid rows, truncation, source failures, and replacement of mock data. The synthetic fixture runs the actual decoder and plotting modules for all 15 panel combinations. Keep synthetic outputs outside production `data/`.
-
-Reset tests use temporary repositories and local bare remotes, with process discovery limited to test processes. They check shutdown before deletion, hidden plot cleanup, repeat runs, staged-change protection, symlinks, failed-push recovery, and restarting the watcher from `[]`. Browser reset checks cover clearing a loaded plot and selection band, preserving temperatures, and resuming Latest for the next run.
+The retained regression tests cover N−1 completion, analysis retries, retention, PT100 appends, publication isolation, and restarting from an empty history. Deployment tests run only in temporary repositories with local bare remotes and process discovery restricted to test processes. They verify shutdown of both programs and receiver workers before deletion, raw/plot cleanup, all three JSON resets, repeat runs, staged-change and symlink protection, and failed-push recovery. Simulation generators, manual browser fixtures, and generated test assets have been removed from this field workspace.
