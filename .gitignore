@@ -18,6 +18,9 @@ data/*/cache/
 # This repository publishes the dashboard only; the acquisition toolkit stays local.
 /Multi_ch_analysis.py
 /Running_Receiver.py
+/sync_test_maker.py
+/reset_test.sh
+/test_ready/
 /modules/
 /tambo_monitor/
 /tests/

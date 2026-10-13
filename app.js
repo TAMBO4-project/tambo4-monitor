@@ -429,10 +429,19 @@ async function refresh() {
       }
       return data;
     }));
-    if (results[0].status === "fulfilled" && Array.isArray(results[0].value.datasets)) {
-      const signature = JSON.stringify(results[0].value);
+    const manifest = results[0].status === "fulfilled" ? results[0].value : null;
+    // reset_test.sh publishes []: clear an already-open dashboard as well as a fresh page.
+    const resetHistory = Array.isArray(manifest) && manifest.length === 0;
+    const history = resetHistory
+      ? {datasets:[], latest:null, timezone:state.history.timezone || CONFIG.timezone} : manifest;
+    if (Array.isArray(history?.datasets)) {
+      const signature = JSON.stringify(history);
       if (signature !== state.manifestSignature) {
-        state.manifestSignature = signature; state.history = results[0].value;
+        state.manifestSignature = signature; state.history = history;
+        if (resetHistory) {
+          state.mode = "latest"; state.historyId = null; state.plotId = null;
+          showHistory(false);
+        }
         renderHistory(); renderViewer();
       } else if (!state.frameUrl) renderViewer();
     }
