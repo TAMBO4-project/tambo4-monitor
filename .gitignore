@@ -1,0 +1,28 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+*.bin
+*.h5
+*.pkl
+*.done
+.analyzed
+.failed
+.skipped
+.tambo-state/
+raw_data/
+# Older receiver layouts must never enter the Pages data folder.
+data/*/*.bin
+data/*/h5_data/
+data/*/cache/
+# This repository publishes the dashboard only; the acquisition toolkit stays local.
+/Multi_ch_analysis.py
+/Running_Receiver.py
+/modules/
+/tambo_monitor/
+/tests/
+/requirements.txt
+/.qa/
+
+# PT100 source logs stay local; only generated temperature.json is published.
+pt100_*.csv

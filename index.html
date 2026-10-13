@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f5f2">
+  <title></title>
+  <link rel="icon" href="assets/logo-placeholder.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="app.js?v=2" defer></script>
+</head>
+<body>
+  <main class="dashboard">
+    <header class="masthead"><span data-i18n="eyebrow"></span><span id="connection" class="connection" role="status"></span></header>
+    <section class="overview">
+      <div class="brand card">
+        <div class="logo-box"><img id="logo" src="assets/logo-placeholder.svg" alt=""></div>
+        <h1 data-i18n="title"></h1><p data-i18n="subtitle"></p>
+        <span class="brand-caption" data-i18n="instrument"></span>
+      </div>
+      <section class="status-board card">
+        <div class="section-heading"><h2 data-i18n="channelStatus"></h2><span class="section-number">01</span></div>
+        <div id="panel-status" class="status-grid"></div>
+        <p class="muted status-note" id="status-note"></p>
+      </section>
+      <section class="temperature card">
+        <div class="section-heading"><h2 data-i18n="temperature"></h2><div class="chart-heading"><span id="temperature-badge" class="badge"></span><span class="section-number">02</span></div></div>
+        <div class="temperature-body"><div class="temperature-stat"><span id="temperature-value">—</span><span class="unit" data-i18n="celsius"></span><p data-i18n="lastReading"></p></div><div class="chart-wrap"><svg id="temperature-chart" viewBox="0 0 640 148" role="img"></svg><span id="chart-empty" class="chart-empty"></span></div></div>
+        <div class="chart-footer"><span id="temperature-legend"></span><span id="temperature-caption"></span></div>
+      </section>
+    </section>
+    <section class="workspace">
+      <aside class="setup card">
+        <div class="section-heading"><h2 data-i18n="setup"></h2><span class="section-number">03</span></div>
+        <p class="setup-description" data-i18n="selectInstructions"></p>
+        <div class="map" id="setup-map">
+          <img id="satellite" src="assets/satellite-placeholder.svg" alt="">
+          <span class="map-tag" data-i18n="arrayView"></span>
+          <div id="panel-markers"></div>
+          <span class="map-caption" id="map-caption"></span>
+        </div>
+        <div class="selection-heading"><span data-i18n="selectedPanels"></span><button type="button" class="text-button" id="select-all" data-i18n="selectAll"></button></div>
+        <div id="selection-chips" class="selection-chips"></div>
+        <div class="selection-summary"><span class="selection-dot"></span><span id="selection-summary"></span></div>
+        <div class="setup-footer"><span class="tiny-grid" aria-hidden="true">▦</span><p data-i18n="selectionHelp"></p></div>
+      </aside>
+      <section class="viewer card">
+        <div class="viewer-heading"><div><span class="eyebrow" data-i18n="analysisWorkspace"></span><h2 id="viewer-title"></h2></div><a id="open-plot" class="outline-button" target="_blank" rel="noopener" hidden><span data-i18n="openPlot"></span><span aria-hidden="true">↗</span></a></div>
+        <div class="plot-controls"><button id="scroll-left" class="scroll-button" type="button">‹</button><div id="plot-tabs" class="plot-tabs" role="tablist"></div><button id="scroll-right" class="scroll-button" type="button">›</button></div>
+        <div class="time-controls"><div class="time-tabs" role="tablist"><button id="latest-tab" type="button" role="tab" aria-selected="true" data-i18n="latest"></button><button id="history-tab" type="button" role="tab" aria-selected="false" aria-expanded="false" aria-controls="history-list" data-i18n="history"></button></div><span id="dataset-label" class="dataset-label"></span><div id="history-list" class="history-list" hidden></div></div>
+        <div class="plot-stage" id="plot-stage"><div id="plot-empty" class="plot-empty"><div class="empty-icon" aria-hidden="true">⌁</div><h3 id="empty-title"></h3><p id="empty-description"></p></div><iframe id="plot-frame" title="" sandbox="allow-scripts allow-downloads" hidden></iframe></div>
+        <div class="viewer-footer"><span id="plot-caption"></span><span data-i18n="retention"></span></div>
+      </section>
+    </section>
+    <footer class="page-footer"><span data-i18n="footer"></span><span id="updated-at"></span></footer>
+  </main>
+</body>
+</html>
