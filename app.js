@@ -56,7 +56,7 @@ const CONFIG = {
   satellitePath: "assets/satellite_map.png",
   satelliteFallback: "assets/satellite-placeholder.svg",
   // Percentage coordinates refer to the displayed image. Replace with surveyed positions.
-  panelPositions: { A: [40, 20], B: [25, 70], C: [80, 60], D: [50, 50] },
+  panelPositions: { A: [25, 70], B: [50, 50], C: [50, 20], D: [75, 70] },
   refreshMs: 10000,
   temperatureTransitionMs: 300,
   // Acquisition duration in seconds. Keep this in sync with the receiver
