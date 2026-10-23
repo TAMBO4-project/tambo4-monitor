@@ -1,6 +1,6 @@
 /* All dashboard UI copy lives here. Add another dictionary to translate the UI. */
 const EN = {
-  title: "TAMBO-4", pageTitle: "", subtitle: "Experiment monitoring",
+  title: "", pageTitle: "", subtitle: "Experiment monitoring",
   eyebrow: "TAMBO-4 MONITORING", instrument: "Four panels. One experiment.",
   channelStatus: "Channel status", temperature: "Temperature", setup: "TAMBO-4 setup",
   selectInstructions: "Select panels to explore individual signals or coincidences.",
