@@ -66,7 +66,7 @@ const CONFIG = {
   dataRoot: "data/",
   panelColors: { A: "#398a6b", B: "#558cbb", C: "#bd9147", D: "#9475ad" },
   // Style settings for the "Detector array" label on the setup map.
-  arrayViewColor: "#ffffff",
+  arrayViewColor: "#c631f3",
   arrayViewFont: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
 };
 const I18N = EN;
