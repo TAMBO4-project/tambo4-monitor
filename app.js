@@ -7,7 +7,7 @@ const EN = {
   selectedPanels: "Selected panels", selectAll: "Select all", clearAll: "Clear all",
   selectionHelp: "Combine any of the four panels to inspect a coincidence set.",
   arrayView: "Detector array", schematic: "Placeholder · positions are approximate",
-  satelliteCaption: "TAMBO-4 · detector positions", logoAlt: "TAMBO-4 logo placeholder",
+  satelliteCaption: "TAMBO-4 detector positions", logoAlt: "TAMBO-4 logo placeholder",
   satelliteAlt: "TAMBO-4 satellite map", placeholderAlt: "Placeholder diagram of the four-panel setup",
   analysisWorkspace: "Analysis workspace", openPlot: "Open plot", latest: "Latest",
   history: "History (Last 24h)", retention: "24-hour dataset window", footer: "TdeAMBO-4 / Experiment monitoring",
@@ -68,8 +68,11 @@ const CONFIG = {
   // Style settings for the "Detector array" label on the setup map.
   arrayViewColor: "#ffffff",
   arrayViewBackground: "rgba(0, 0, 0, 0.65)",
-  arrayViewBackground: "rgba(0, 0, 0, 0.65)",
-  arrayViewFont: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+  arrayViewFont: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  // Style settings for the "TAMBO-4 detector positions" caption on the setup map.
+  satelliteCaptionColor: "#ffffff",
+  satelliteCaptionBackground: "rgba(0, 0, 0, 0.65)",
+  satelliteCaptionFont: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
 };
 const I18N = EN;
 const $ = (id) => document.getElementById(id);
@@ -147,6 +150,22 @@ function initialize() {
     $("satellite").alt = I18N.placeholderAlt;
   });
   $("map-caption").textContent = I18N.satelliteCaption;
+  const mapCaption = $("map-caption");
+  if (mapCaption) {
+    if (CONFIG.satelliteCaptionColor) mapCaption.style.color = CONFIG.satelliteCaptionColor;
+    if (CONFIG.satelliteCaptionBackground) {
+      mapCaption.style.backgroundColor = CONFIG.satelliteCaptionBackground;
+      mapCaption.style.padding = "3px 7px";
+      mapCaption.style.borderRadius = "4px";
+      mapCaption.style.left = "50%";
+      mapCaption.style.right = "auto";
+      mapCaption.style.transform = "translateX(-50%)";
+      mapCaption.style.whiteSpace = "nowrap";
+    }
+    if (CONFIG.satelliteCaptionFont) {
+      mapCaption.style[/\b\d+(?:\.\d+)?(?:px|pt|em|rem|%|vh|vw)\b/.test(CONFIG.satelliteCaptionFont) ? "font" : "fontFamily"] = CONFIG.satelliteCaptionFont;
+    }
+  }
   panels.forEach(panel => {
     const marker = element("button", "panel-marker", panel);
     marker.type = "button";
