@@ -1,6 +1,6 @@
 /* All dashboard UI copy lives here. Add another dictionary to translate the UI. */
 const EN = {
-  title: "TAMBO-4", pageTitle: "TAMBO-4", subtitle: "Experiment monitoring",
+  title: "TAMBO-4", pageTitle: "", subtitle: "Experiment monitoring",
   eyebrow: "TAMBO-4 MONITORING", instrument: "Four panels. One experiment.",
   channelStatus: "Channel status", temperature: "Temperature", setup: "TAMBO-4 setup",
   selectInstructions: "Select panels to explore individual signals or coincidences.",
@@ -10,7 +10,7 @@ const EN = {
   satelliteCaption: "TAMBO-4 · detector positions", logoAlt: "TAMBO-4 logo placeholder",
   satelliteAlt: "TAMBO-4 satellite map", placeholderAlt: "Placeholder diagram of the four-panel setup",
   analysisWorkspace: "Analysis workspace", openPlot: "Open plot", latest: "Latest",
-  history: "History (Last 24h)", retention: "24-hour dataset window", footer: "TAMBO-4 / Experiment monitoring",
+  history: "History (Last 24h)", retention: "24-hour dataset window", footer: "TdeAMBO-4 / Experiment monitoring",
   celsius: "°C", lastReading: "Last reading", mock: "Mock data", sensorData: "Sensor data",
   temperatureError: "Sensor unavailable", temperatureEmpty: "Waiting for temperature readings",
   selectedDataset: "Selected: {id}", selectedPeriodEmpty: "No temperature readings in the selected period",
