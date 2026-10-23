@@ -64,7 +64,10 @@ const CONFIG = {
   chunkSizeSeconds: 600,
   timezone: "America/Lima",
   dataRoot: "data/",
-  panelColors: { A: "#398a6b", B: "#558cbb", C: "#bd9147", D: "#9475ad" }
+  panelColors: { A: "#398a6b", B: "#558cbb", C: "#bd9147", D: "#9475ad" },
+  // Style settings for the "Detector array" label on the setup map.
+  arrayViewColor: "#ffffff",
+  arrayViewFont: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
 };
 const I18N = EN;
 const $ = (id) => document.getElementById(id);
@@ -120,6 +123,13 @@ function selectedDatasetInterval() {
 function initialize() {
   document.title = I18N.pageTitle;
   document.querySelectorAll("[data-i18n]").forEach(node => { node.textContent = I18N[node.dataset.i18n]; });
+  const arrayViewTag = document.querySelector('[data-i18n="arrayView"]');
+  if (arrayViewTag) {
+    if (CONFIG.arrayViewColor) arrayViewTag.style.color = CONFIG.arrayViewColor;
+    if (CONFIG.arrayViewFont) {
+      arrayViewTag.style[/\b\d+(?:\.\d+)?(?:px|pt|em|rem|%|vh|vw)\b/.test(CONFIG.arrayViewFont) ? "font" : "fontFamily"] = CONFIG.arrayViewFont;
+    }
+  }
   $("plot-tabs").setAttribute("aria-label", I18N.plots);
   $("scroll-left").setAttribute("aria-label", I18N.scrollLeft);
   $("scroll-right").setAttribute("aria-label", I18N.scrollRight);
