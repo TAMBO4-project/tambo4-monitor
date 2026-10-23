@@ -1,12 +1,1 @@
-{
-  "version": 1,
-  "observed_dataset": null,
-  "latest_analyzed": null,
-  "completion_rule": "next_directory",
-  "panels": {
-    "A": {"status": "Waiting", "detail": "awaiting_data"},
-    "B": {"status": "Waiting", "detail": "awaiting_data"},
-    "C": {"status": "Waiting", "detail": "awaiting_data"},
-    "D": {"status": "Waiting", "detail": "awaiting_data"}
-  }
-}
+{"A": {"status": "Waiting"}, "B": {"status": "Waiting"}, "C": {"status": "Waiting"}, "D": {"status": "Waiting"}}
