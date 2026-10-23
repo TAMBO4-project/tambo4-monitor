@@ -1,1 +1,26 @@
-{"A": {"status": "Waiting"}, "B": {"status": "Waiting"}, "C": {"status": "Waiting"}, "D": {"status": "Waiting"}}
+{
+  "version": 1,
+  "observed_dataset": "261023_142415",
+  "latest_analyzed": null,
+  "panels": {
+    "A": {
+      "status": "Waiting",
+      "detail": "awaiting_data"
+    },
+    "B": {
+      "status": "Waiting",
+      "detail": "awaiting_data"
+    },
+    "C": {
+      "status": "Waiting",
+      "detail": "awaiting_data"
+    },
+    "D": {
+      "status": "Waiting",
+      "detail": "awaiting_data"
+    }
+  },
+  "completion_rule": "next_directory",
+  "timezone": "America/Lima",
+  "updated_at": "2026-10-23T21:45:08+00:00"
+}
