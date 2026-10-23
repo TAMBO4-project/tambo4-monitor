@@ -66,7 +66,9 @@ const CONFIG = {
   dataRoot: "data/",
   panelColors: { A: "#398a6b", B: "#558cbb", C: "#bd9147", D: "#9475ad" },
   // Style settings for the "Detector array" label on the setup map.
-  arrayViewColor: "#c631f3",
+  arrayViewColor: "#ffffff",
+  arrayViewBackground: "rgba(0, 0, 0, 0.65)",
+  arrayViewBackground: "rgba(0, 0, 0, 0.65)",
   arrayViewFont: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
 };
 const I18N = EN;
@@ -126,6 +128,11 @@ function initialize() {
   const arrayViewTag = document.querySelector('[data-i18n="arrayView"]');
   if (arrayViewTag) {
     if (CONFIG.arrayViewColor) arrayViewTag.style.color = CONFIG.arrayViewColor;
+    if (CONFIG.arrayViewBackground) {
+      arrayViewTag.style.backgroundColor = CONFIG.arrayViewBackground;
+      arrayViewTag.style.padding = "3px 7px";
+      arrayViewTag.style.borderRadius = "4px";
+    }
     if (CONFIG.arrayViewFont) {
       arrayViewTag.style[/\b\d+(?:\.\d+)?(?:px|pt|em|rem|%|vh|vw)\b/.test(CONFIG.arrayViewFont) ? "font" : "fontFamily"] = CONFIG.arrayViewFont;
     }
