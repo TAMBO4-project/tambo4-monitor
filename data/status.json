@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "observed_dataset": "261023_142415",
-  "latest_analyzed": null,
+  "observed_dataset": "261023_143415",
+  "latest_analyzed": "261023_142415",
   "panels": {
     "A": {
       "status": "Waiting",
@@ -22,5 +22,5 @@
   },
   "completion_rule": "next_directory",
   "timezone": "America/Lima",
-  "updated_at": "2026-10-23T21:45:08+00:00"
+  "updated_at": "2026-10-24T01:40:22+00:00"
 }
