@@ -1,16 +1,17 @@
-/* All dashboard UI copy lives here. Add another dictionary to translate the UI. */
-const EN = {
-  title: "", pageTitle: "", subtitle: "Experiment monitoring",
+/* All dashboard UI copy lives here, including dynamic labels and accessibility text. */
+const i18n = {
+EN: {
+  title: "", pageTitle: "TAMBO-4 monitoring", subtitle: "Experiment monitoring",
   eyebrow: "TAMBO-4 MONITORING", instrument: "Four panels. One experiment.",
   channelStatus: "Channel status", temperature: "Temperature", setup: "TAMBO-4 setup",
   selectInstructions: "Select panels to explore individual signals or coincidences.",
   selectedPanels: "Selected panels", selectAll: "Select all", clearAll: "Clear all",
   selectionHelp: "Combine any of the four panels to inspect a coincidence set.",
   arrayView: "Detector array", schematic: "Placeholder · positions are approximate",
-  satelliteCaption: "TAMBO-4 detector positions", logoAlt: "TAMBO-4 logo placeholder",
+  satelliteCaption: "TAMBO-4 detector positions", logoAlt: "TAMBO-4 logo",
   satelliteAlt: "TAMBO-4 satellite map", placeholderAlt: "Placeholder diagram of the four-panel setup",
   analysisWorkspace: "Analysis workspace", openPlot: "Open plot", latest: "Latest",
-  history: "History (Last 24h)", retention: "24-hour dataset window", footer: "TdeAMBO-4 / Experiment monitoring",
+  history: "History (Last 24h)", retention: "24-hour dataset window", footer: "TAMBO-4 / Experiment monitoring",
   celsius: "°C", lastReading: "Last reading", mock: "Mock data", sensorData: "Sensor data",
   temperatureError: "Sensor unavailable", temperatureEmpty: "Waiting for temperature readings",
   selectedDataset: "Selected: {id}", selectedPeriodEmpty: "No temperature readings in the selected period",
@@ -32,6 +33,7 @@ const EN = {
   lastUpdated: "Published {time}", notPublished: "Awaiting first publication", scrollLeft: "Scroll plot tabs left",
   scrollRight: "Scroll plot tabs right", plotFrame: "Analysis plot for {panels}",
   useDarkMode: "Switch to dark mode", useLightMode: "Switch to light mode",
+  language: "Language",
   running: "Running", waiting: "Waiting", error: "Error", availablePlots: "{count} available plots",
   plotNames: {
     "04_baseline_estimation": "Baseline", "05_plot_coincidences": "Coincident pulses",
@@ -47,6 +49,105 @@ const EN = {
     insufficient_baseline: "Insufficient baseline samples", no_usable_pulses: "No pulses pass the sample cut",
     analysis_failed: "Analysis failed; retry pending"
   }
+},
+KO: {
+  title: "", pageTitle: "TAMBO-4 모니터링", subtitle: "실험 모니터링",
+  eyebrow: "TAMBO-4 모니터링", instrument: "네 개의 패널. 하나의 실험.",
+  channelStatus: "채널 상태", temperature: "온도", setup: "TAMBO-4 배치",
+  selectInstructions: "패널을 선택하여 개별 신호 또는 동시 검출 결과를 확인하세요.",
+  selectedPanels: "선택한 패널", selectAll: "모두 선택", clearAll: "선택 해제",
+  selectionHelp: "네 개의 패널을 조합하여 동시 검출 결과를 확인하세요.",
+  arrayView: "검출기 배열", schematic: "임시 배치도 · 위치는 대략적인 값입니다",
+  satelliteCaption: "TAMBO-4 검출기 위치", logoAlt: "TAMBO-4 로고",
+  satelliteAlt: "TAMBO-4 위성 지도", placeholderAlt: "네 개 패널의 임시 배치도",
+  analysisWorkspace: "분석 작업 공간", openPlot: "그래프 열기", latest: "최신",
+  history: "기록 (최근 24시간)", retention: "24시간 데이터셋 범위", footer: "TAMBO-4 / 실험 모니터링",
+  celsius: "°C", lastReading: "최근 측정값", mock: "모의 데이터", sensorData: "센서 데이터",
+  temperatureError: "센서 사용 불가", temperatureEmpty: "온도 측정값을 기다리는 중",
+  selectedDataset: "선택: {id}", selectedPeriodEmpty: "선택한 기간에 온도 측정값이 없습니다",
+  temperaturePeriod: "24시간 온도 기록", mockCaption: "예시 측정값 · 센서가 연결되지 않았습니다",
+  mockSensor: "모의 센서", pt100: "PT100", allPanels: "전체 패널", panel: "패널 {panel}", panels: "패널 {panels}",
+  selectPanel: "패널 {panel} 선택", single: "단일 패널 분석", coincidence: "{count}개 패널 동시 검출",
+  noSelection: "선택한 패널 없음", noSelectionDescription: "배치도에서 하나 이상의 패널을 선택하여 그래프를 확인하세요.",
+  plots: "그래프", noPlots: "사용 가능한 그래프 없음", waitingTitle: "다음 데이터셋을 기다리는 중",
+  waitingDescription: "수신 프로그램이 더 최근 시각의 디렉터리를 생성하면 완료된 데이터셋이 여기에 표시됩니다.",
+  noSetTitle: "이 패널 조합을 사용할 수 없습니다", noSetDescription: "선택한 데이터셋의 패널 데이터가 없거나 사용할 수 없습니다.",
+  missingPlotTitle: "이 데이터셋의 그래프를 사용할 수 없습니다", missingPlotDescription: "그래프 선택은 유지됩니다. 다른 그래프나 데이터셋을 선택하세요.",
+  loadingTitle: "그래프를 불러오는 중", loadingDescription: "선택한 분석 결과를 여는 중입니다.",
+  failedTitle: "그래프를 불러오지 못했습니다", failedDescription: "파일을 게시하는 중일 수 있습니다. 다시 선택하거나 다음 갱신을 기다리세요.",
+  noHistory: "최근 24시간 동안 분석된 데이터셋이 없습니다.", noDataset: "분석된 데이터셋 없음",
+  historyExpired: "이 데이터셋은 24시간 범위를 벗어났습니다. 다른 시각이나 최신 항목을 선택하세요.",
+  missingHistory: "데이터셋을 더 이상 사용할 수 없습니다", statusWaiting: "데이터 수집을 기다리는 중",
+  statusObserved: "감지됨: {id} · 최신 데이터셋은 대기 중", statusLatest: "최근 분석: {id}",
+  autoRefresh: "자동 갱신 · {seconds}초", connectionError: "갱신 불가 · 재시도 중",
+  lastUpdated: "게시 시각: {time}", notPublished: "첫 게시를 기다리는 중", scrollLeft: "그래프 탭을 왼쪽으로 이동",
+  scrollRight: "그래프 탭을 오른쪽으로 이동", plotFrame: "패널 {panels}의 분석 그래프",
+  useDarkMode: "다크 모드로 전환", useLightMode: "라이트 모드로 전환", language: "언어",
+  running: "실행 중", waiting: "대기 중", error: "오류", availablePlots: "그래프 {count}개",
+  plotNames: {
+    "04_baseline_estimation": "기저선", "05_plot_coincidences": "동시 검출 펄스",
+    "08_adc_peak_histogram": "ADC 피크", "09_charge_calculation": "전하 계산",
+    "10_charge_histogram": "전하 히스토그램", "10_charge_histogram_individual": "개별 전하",
+    "11_plot_random_samples": "펄스 샘플", "12_pulse_duration_histogram": "펄스 지속 시간",
+    "16_multipulse_visualizer": "다중 펄스 이벤트", "16_plot_pulse_rates": "펄스 발생률",
+    "17_inter_pulse_time_difference": "펄스 간 시간차", "17_coincidence_time_difference": "동시 검출 시간차"
+  },
+  details: {
+    receiving_data: "최근 데이터 파일 활동 감지", awaiting_data: "데이터 파일 활동을 기다리는 중",
+    missing_data: "패널 파일 없음", empty_data: "빈 패널 파일", incomplete_record: "불완전한 바이너리 레코드",
+    insufficient_baseline: "기저선 샘플 부족", no_usable_pulses: "샘플 선택 기준을 통과한 펄스 없음",
+    analysis_failed: "분석 실패; 재시도 대기 중"
+  }
+},
+ES: {
+  title: "", pageTitle: "Monitoreo TAMBO-4", subtitle: "Monitoreo del experimento",
+  eyebrow: "MONITOREO TAMBO-4", instrument: "Cuatro paneles. Un experimento.",
+  channelStatus: "Estado de los canales", temperature: "Temperatura", setup: "Disposición TAMBO-4",
+  selectInstructions: "Seleccione paneles para explorar señales individuales o coincidencias.",
+  selectedPanels: "Paneles seleccionados", selectAll: "Seleccionar todos", clearAll: "Desmarcar todos",
+  selectionHelp: "Combine los cuatro paneles para examinar un conjunto de coincidencias.",
+  arrayView: "Arreglo de detectores", schematic: "Esquema provisional · posiciones aproximadas",
+  satelliteCaption: "Posiciones de los detectores TAMBO-4", logoAlt: "Logotipo de TAMBO-4",
+  satelliteAlt: "Mapa satelital de TAMBO-4", placeholderAlt: "Esquema provisional de los cuatro paneles",
+  analysisWorkspace: "Área de análisis", openPlot: "Abrir gráfico", latest: "Más reciente",
+  history: "Historial (últimas 24 h)", retention: "Ventana de datos de 24 horas", footer: "TAMBO-4 / Monitoreo del experimento",
+  celsius: "°C", lastReading: "Última lectura", mock: "Datos simulados", sensorData: "Datos del sensor",
+  temperatureError: "Sensor no disponible", temperatureEmpty: "Esperando lecturas de temperatura",
+  selectedDataset: "Seleccionado: {id}", selectedPeriodEmpty: "No hay lecturas de temperatura en el período seleccionado",
+  temperaturePeriod: "Serie de temperatura de 24 horas", mockCaption: "Lecturas de ejemplo · sensor desconectado",
+  mockSensor: "Sensor de demostración", pt100: "PT100", allPanels: "Los cuatro paneles", panel: "Panel {panel}", panels: "Paneles {panels}",
+  selectPanel: "Seleccionar panel {panel}", single: "Análisis de un panel", coincidence: "Coincidencia de {count} paneles",
+  noSelection: "Ningún panel seleccionado", noSelectionDescription: "Seleccione uno o más paneles en el mapa para ver sus gráficos.",
+  plots: "Gráficos", noPlots: "No hay gráficos disponibles", waitingTitle: "Esperando el siguiente conjunto de datos",
+  waitingDescription: "Los conjuntos de datos completos aparecerán cuando el receptor cree un directorio con una marca de tiempo más reciente.",
+  noSetTitle: "Esta combinación de paneles no está disponible", noSetDescription: "El conjunto seleccionado contiene datos de paneles faltantes o inutilizables.",
+  missingPlotTitle: "Gráfico no disponible para estos datos", missingPlotDescription: "Se conserva el gráfico seleccionado. Elija otro gráfico o conjunto de datos para continuar.",
+  loadingTitle: "Cargando gráfico", loadingDescription: "Abriendo el resultado del análisis seleccionado.",
+  failedTitle: "No se pudo cargar el gráfico", failedDescription: "Es posible que el archivo aún se esté publicando. Selecciónelo de nuevo o espere la próxima actualización.",
+  noHistory: "No hay conjuntos de datos analizados en las últimas 24 horas.", noDataset: "Sin datos analizados",
+  historyExpired: "Estos datos están fuera de la ventana de 24 horas. Seleccione otra fecha o Más reciente.",
+  missingHistory: "Conjunto de datos ya no disponible", statusWaiting: "Esperando la adquisición de datos",
+  statusObserved: "Detectado: {id} · el conjunto más reciente está en espera", statusLatest: "Último análisis: {id}",
+  autoRefresh: "Actualización automática · {seconds}s", connectionError: "Actualización no disponible · reintentando",
+  lastUpdated: "Publicado: {time}", notPublished: "Esperando la primera publicación", scrollLeft: "Desplazar las pestañas a la izquierda",
+  scrollRight: "Desplazar las pestañas a la derecha", plotFrame: "Gráfico de análisis de los paneles {panels}",
+  useDarkMode: "Cambiar al modo oscuro", useLightMode: "Cambiar al modo claro", language: "Idioma",
+  running: "En ejecución", waiting: "En espera", error: "Error", availablePlots: "{count} gráficos disponibles",
+  plotNames: {
+    "04_baseline_estimation": "Línea de base", "05_plot_coincidences": "Pulsos coincidentes",
+    "08_adc_peak_histogram": "Pico ADC", "09_charge_calculation": "Cálculo de carga",
+    "10_charge_histogram": "Histograma de carga", "10_charge_histogram_individual": "Carga individual",
+    "11_plot_random_samples": "Muestras de pulsos", "12_pulse_duration_histogram": "Duración de pulsos",
+    "16_multipulse_visualizer": "Eventos de múltiples pulsos", "16_plot_pulse_rates": "Tasa de pulsos",
+    "17_inter_pulse_time_difference": "Tiempo entre pulsos", "17_coincidence_time_difference": "Tiempo entre coincidencias"
+  },
+  details: {
+    receiving_data: "Actividad reciente en archivos de datos", awaiting_data: "Esperando actividad en archivos de datos",
+    missing_data: "Falta el archivo del panel", empty_data: "Archivo del panel vacío", incomplete_record: "Registro binario incompleto",
+    insufficient_baseline: "Muestras de línea de base insuficientes", no_usable_pulses: "Ningún pulso cumple el criterio de selección",
+    analysis_failed: "Falló el análisis; reintento pendiente"
+  }
+}
 };
 
 const CONFIG = {
@@ -76,17 +177,49 @@ const CONFIG = {
   satelliteCaptionBackground: "rgba(0, 0, 0, 0.65)",
   satelliteCaptionFont: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
 };
-const I18N = EN;
+let language = Object.hasOwn(i18n, document.documentElement.dataset.language) ? document.documentElement.dataset.language : "EN";
+let I18N = i18n[language];
+const locales = {EN:"en-GB", KO:"ko-KR", ES:"es-PE"};
 const $ = (id) => document.getElementById(id);
 const t = (key, values = {}) => Object.entries(values).reduce((text, [name, value]) => text.replaceAll(`{${name}}`, String(value)), I18N[key]);
 const state = { selected: new Set(["A"]), mode: "latest", historyId: null, plotId: null,
-  history: { datasets: [] }, status: null, temperature: null, frameUrl: null, frameRequest: 0, manifestSignature: null };
+  history: { datasets: [] }, status: null, temperature: null, frameUrl: null, frameRequest: 0, manifestSignature: null, connectionFailed:false };
 let frameAbort;
 const panels = Object.keys(CONFIG.panelPositions).sort();
 const selection = () => [...state.selected].sort().join("-");
 const element = (tag, className, text) => { const node = document.createElement(tag); if (className) node.className = className; if (text !== undefined) node.textContent = text; return node; };
 const stamp = (id) => /^\d{6}_\d{6}$/.test(id || "") ? `20${id.slice(0,2)}-${id.slice(2,4)}-${id.slice(4,6)} ${id.slice(7,9)}:${id.slice(9,11)}:${id.slice(11,13)}` : I18N.noDataset;
-const formatTime = (date, options) => new Intl.DateTimeFormat("en-GB", { timeZone: state.history.timezone || CONFIG.timezone, ...options }).format(date);
+const formatTime = (date, options) => new Intl.DateTimeFormat(locales[language], { timeZone: state.history.timezone || CONFIG.timezone, ...options }).format(date);
+
+function translateUI() {
+  document.title = I18N.pageTitle;
+  document.querySelectorAll("[data-i18n]").forEach(node => { node.textContent = I18N[node.dataset.i18n]; });
+  document.querySelectorAll("[data-i18n-aria-label]").forEach(node => { node.setAttribute("aria-label", I18N[node.dataset.i18nAriaLabel]); });
+  document.querySelectorAll("[data-i18n-alt]").forEach(node => { node.alt = I18N[node.dataset.i18nAlt]; });
+  renderThemeToggle();
+  renderMapText();
+}
+function applyLanguage(value, persist = true) {
+  language = Object.hasOwn(i18n, value) ? value : "EN";
+  I18N = i18n[language];
+  document.documentElement.lang = language.toLowerCase();
+  document.documentElement.dataset.language = language;
+  $("language-select").value = language;
+  translateUI();
+  renderSelection(); renderStatus(); renderHistory(); renderViewer(); renderConnection();
+  if (persist) {
+    try { localStorage.setItem("language", language); } catch { /* Language still works without storage. */ }
+  }
+}
+function renderMapText() {
+  const fallback = $("satellite").getAttribute("src") === CONFIG.satelliteFallback;
+  $("satellite").alt = fallback ? I18N.placeholderAlt : I18N.satelliteAlt;
+  $("map-caption").textContent = fallback ? I18N.schematic : I18N.satelliteCaption;
+}
+function renderConnection() {
+  $("connection").textContent = state.connectionFailed ? I18N.connectionError : t("autoRefresh", {seconds:CONFIG.refreshMs/1000});
+  $("connection").classList.toggle("error", state.connectionFailed);
+}
 
 function chartTheme() {
   const styles = getComputedStyle(document.body);
@@ -119,13 +252,17 @@ function syncCharts() {
 function applyTheme(dark) {
   document.body.classList.toggle("dark-mode", dark);
   imageWithFallback($("logo"), dark ? CONFIG.logoDarkPath : CONFIG.logoPath, CONFIG.logoFallback, I18N.logoAlt);
+  renderThemeToggle();
+  document.querySelector('meta[name="theme-color"]').content = getComputedStyle(document.body).getPropertyValue("--paper").trim();
+  syncCharts();
+}
+function renderThemeToggle() {
+  const dark = document.body.classList.contains("dark-mode");
   const toggle = $("theme-toggle"), label = I18N[dark ? "useLightMode" : "useDarkMode"];
   toggle.firstElementChild.textContent = dark ? "\u2600\uFE0F" : "\uD83C\uDF19";
   toggle.setAttribute("aria-pressed", String(dark));
   toggle.setAttribute("aria-label", label);
   toggle.title = label;
-  document.querySelector('meta[name="theme-color"]').content = getComputedStyle(document.body).getPropertyValue("--paper").trim();
-  syncCharts();
 }
 function initializeTheme() {
   applyTheme(document.body.classList.contains("dark-mode"));
@@ -206,8 +343,6 @@ function selectedDatasetInterval() {
 
 function initialize() {
   initializeTheme();
-  document.title = I18N.pageTitle;
-  document.querySelectorAll("[data-i18n]").forEach(node => { node.textContent = I18N[node.dataset.i18n]; });
   const arrayViewTag = document.querySelector('[data-i18n="arrayView"]');
   if (arrayViewTag) {
     if (CONFIG.arrayViewColor) arrayViewTag.style.color = CONFIG.arrayViewColor;
@@ -220,15 +355,8 @@ function initialize() {
       arrayViewTag.style[/\b\d+(?:\.\d+)?(?:px|pt|em|rem|%|vh|vw)\b/.test(CONFIG.arrayViewFont) ? "font" : "fontFamily"] = CONFIG.arrayViewFont;
     }
   }
-  $("plot-tabs").setAttribute("aria-label", I18N.plots);
-  $("scroll-left").setAttribute("aria-label", I18N.scrollLeft);
-  $("scroll-right").setAttribute("aria-label", I18N.scrollRight);
-  $("temperature-chart").setAttribute("aria-label", I18N.temperaturePeriod);
-  imageWithFallback($("satellite"), CONFIG.satellitePath, CONFIG.satelliteFallback, I18N.satelliteAlt, () => {
-    $("map-caption").textContent = I18N.schematic;
-    $("satellite").alt = I18N.placeholderAlt;
-  });
-  $("map-caption").textContent = I18N.satelliteCaption;
+  $("satellite").addEventListener("load", renderMapText);
+  imageWithFallback($("satellite"), CONFIG.satellitePath, CONFIG.satelliteFallback, I18N.satelliteAlt);
   const mapCaption = $("map-caption");
   if (mapCaption) {
     if (CONFIG.satelliteCaptionColor) mapCaption.style.color = CONFIG.satelliteCaptionColor;
@@ -279,7 +407,9 @@ function initialize() {
   document.addEventListener("click", event => { if (!event.target.closest(".time-controls")) showHistory(false); });
   document.addEventListener("keydown", event => { if (event.key === "Escape") { showHistory(false); $("history-tab").focus(); } });
   document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
-  renderSelection(); renderStatus(); renderTemperature(); renderViewer();
+  $("language-select").addEventListener("change", event => applyLanguage(event.target.value));
+  applyLanguage(language, false);
+  document.documentElement.classList.remove("i18n-pending");
   refresh();
   setInterval(refresh, CONFIG.refreshMs);
 }
@@ -299,6 +429,7 @@ function imageWithFallback(img, desired, fallback, alt, onFallback) {
 function togglePanel(panel) { state.selected.has(panel) ? state.selected.delete(panel) : state.selected.add(panel); renderSelection(); renderViewer(); }
 function renderSelection() {
   document.querySelectorAll("[data-panel]").forEach(node => {
+    node.setAttribute("aria-label", t("selectPanel", {panel:node.dataset.panel}));
     const selected = state.selected.has(node.dataset.panel);
     node.setAttribute("aria-pressed", String(selected)); node.classList.toggle("selected", selected);
   });
@@ -347,6 +478,7 @@ function renderHistory() {
 }
 function renderViewer() {
   const key = selection();
+  $("plot-frame").title = t("plotFrame", {panels:key});
   const dataset = currentDataset();
   renderTemperature(); // Keep the acquisition band synchronized even when no plot is available.
   const set = dataset?.panel_sets?.[key];
@@ -453,7 +585,7 @@ function getTemperatureChart() {
 function renderTemperature() {
   const chart = getTemperatureChart(), data = state.temperature;
   const interval = selectedDatasetInterval();
-  const signature = JSON.stringify([data, state.history.timezone || CONFIG.timezone, interval]);
+  const signature = JSON.stringify([data, state.history.timezone || CONFIG.timezone, interval, language]);
   if (signature === chart.signature) return; // No redraw or animation for identical data.
   chart.signature = signature;
   cancelAnimationFrame(chart.animation);
@@ -568,8 +700,8 @@ async function refresh() {
     if (results[1].status === "fulfilled") { state.status = results[1].value; renderStatus(); }
     if (results[2].status === "fulfilled") renderTemperature(); // Also catch a changed display timezone.
     const failed = results.some(result => result.status === "rejected");
-    $("connection").textContent = failed ? I18N.connectionError : t("autoRefresh", {seconds:CONFIG.refreshMs/1000});
-    $("connection").classList.toggle("error", failed);
+    state.connectionFailed = failed;
+    renderConnection();
   } finally { refreshing = false; }
 }
 initialize();

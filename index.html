@@ -4,10 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f5f2">
+  <script>
+    // Keep the dashboard hidden until its saved language has been rendered.
+    document.documentElement.classList.add("i18n-pending");
+    let savedLanguage = "EN";
+    try { savedLanguage = localStorage.getItem("language") || "EN"; } catch {}
+    if (!["EN", "KO", "ES"].includes(savedLanguage)) savedLanguage = "EN";
+    document.documentElement.dataset.language = savedLanguage;
+    document.documentElement.lang = savedLanguage.toLowerCase();
+  </script>
   <title></title>
   <link rel="icon" href="assets/logo-placeholder.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script src="app.js?v=4" defer></script>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="app.js?v=5" defer></script>
 </head>
 <body>
   <script>
@@ -15,10 +24,21 @@
     try { document.body.classList.toggle("dark-mode", localStorage.getItem("theme") === "dark"); } catch {}
   </script>
   <main class="dashboard">
-    <header class="masthead"><span data-i18n="eyebrow"></span><div class="header-actions"><span id="connection" class="connection" role="status"></span><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false"><span aria-hidden="true">&#127769;</span></button></div></header>
+    <header class="masthead">
+      <span data-i18n="eyebrow"></span>
+      <div class="header-actions">
+        <span id="connection" class="connection" role="status"></span>
+        <select id="language-select" class="language-select" data-i18n-aria-label="language">
+          <option value="EN" lang="en">EN</option>
+          <option value="KO" lang="ko">KO</option>
+          <option value="ES" lang="es">ES</option>
+        </select>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false"><span aria-hidden="true">&#127769;</span></button>
+      </div>
+    </header>
     <section class="overview">
       <div class="brand card">
-        <div class="logo-box"><img id="logo" src="assets/logo-placeholder.svg" alt=""></div>
+        <div class="logo-box"><img id="logo" src="assets/logo-placeholder.svg" alt="" data-i18n-alt="logoAlt"></div>
         <h1 data-i18n="title"></h1><p data-i18n="subtitle"></p>
         <span class="brand-caption" data-i18n="instrument"></span>
       </div>
@@ -29,7 +49,7 @@
       </section>
       <section class="temperature card">
         <div class="section-heading"><h2 data-i18n="temperature"></h2><div class="chart-heading"><span id="temperature-badge" class="badge"></span><span class="section-number">02</span></div></div>
-        <div class="temperature-body"><div class="temperature-stat"><span id="temperature-value">—</span><span class="unit" data-i18n="celsius"></span><p data-i18n="lastReading"></p></div><div class="chart-wrap"><svg id="temperature-chart" viewBox="0 0 640 148" role="img"></svg><span id="chart-empty" class="chart-empty"></span></div></div>
+        <div class="temperature-body"><div class="temperature-stat"><span id="temperature-value">—</span><span class="unit" data-i18n="celsius"></span><p data-i18n="lastReading"></p></div><div class="chart-wrap"><svg id="temperature-chart" viewBox="0 0 640 148" role="img" data-i18n-aria-label="temperaturePeriod"></svg><span id="chart-empty" class="chart-empty"></span></div></div>
         <div class="chart-footer"><span id="temperature-legend"></span><span id="temperature-caption"></span></div>
       </section>
     </section>
@@ -50,7 +70,7 @@
       </aside>
       <section class="viewer card">
         <div class="viewer-heading"><div><span class="eyebrow" data-i18n="analysisWorkspace"></span><h2 id="viewer-title"></h2></div><a id="open-plot" class="outline-button" target="_blank" rel="noopener" hidden><span data-i18n="openPlot"></span><span aria-hidden="true">↗</span></a></div>
-        <div class="plot-controls"><button id="scroll-left" class="scroll-button" type="button">‹</button><div id="plot-tabs" class="plot-tabs" role="tablist"></div><button id="scroll-right" class="scroll-button" type="button">›</button></div>
+        <div class="plot-controls"><button id="scroll-left" class="scroll-button" type="button" data-i18n-aria-label="scrollLeft">‹</button><div id="plot-tabs" class="plot-tabs" role="tablist" data-i18n-aria-label="plots"></div><button id="scroll-right" class="scroll-button" type="button" data-i18n-aria-label="scrollRight">›</button></div>
         <div class="time-controls"><div class="time-tabs" role="tablist"><button id="latest-tab" type="button" role="tab" aria-selected="true" data-i18n="latest"></button><button id="history-tab" type="button" role="tab" aria-selected="false" aria-expanded="false" aria-controls="history-list" data-i18n="history"></button></div><span id="dataset-label" class="dataset-label"></span><div id="history-list" class="history-list" hidden></div></div>
         <div class="plot-stage" id="plot-stage"><div id="plot-empty" class="plot-empty"><div class="empty-icon" aria-hidden="true">⌁</div><h3 id="empty-title"></h3><p id="empty-description"></p></div><iframe id="plot-frame" title="" sandbox="allow-scripts allow-downloads" hidden></iframe></div>
         <div class="viewer-footer"><span id="plot-caption"></span><span data-i18n="retention"></span></div>
