@@ -53,6 +53,7 @@ const CONFIG = {
   // Place your real images at these paths, or change the paths here.
   // The SVG placeholders are used automatically until the PNG files exist.
   logoPath: "assets/logo.png",
+  logoDarkPath: "assets/logo-dark.png",
   logoFallback: "assets/logo-placeholder.svg",
   satellitePath: "assets/satellite_map.png",
   satelliteFallback: "assets/satellite-placeholder.svg",
@@ -117,6 +118,7 @@ function syncCharts() {
 }
 function applyTheme(dark) {
   document.body.classList.toggle("dark-mode", dark);
+  imageWithFallback($("logo"), dark ? CONFIG.logoDarkPath : CONFIG.logoPath, CONFIG.logoFallback, I18N.logoAlt);
   const toggle = $("theme-toggle"), label = I18N[dark ? "useLightMode" : "useDarkMode"];
   toggle.firstElementChild.textContent = dark ? "\u2600\uFE0F" : "\uD83C\uDF19";
   toggle.setAttribute("aria-pressed", String(dark));
@@ -222,7 +224,6 @@ function initialize() {
   $("scroll-left").setAttribute("aria-label", I18N.scrollLeft);
   $("scroll-right").setAttribute("aria-label", I18N.scrollRight);
   $("temperature-chart").setAttribute("aria-label", I18N.temperaturePeriod);
-  imageWithFallback($("logo"), CONFIG.logoPath, CONFIG.logoFallback, I18N.logoAlt);
   imageWithFallback($("satellite"), CONFIG.satellitePath, CONFIG.satelliteFallback, I18N.satelliteAlt, () => {
     $("map-caption").textContent = I18N.schematic;
     $("satellite").alt = I18N.placeholderAlt;
@@ -285,10 +286,14 @@ function initialize() {
 
 function imageWithFallback(img, desired, fallback, alt, onFallback) {
   img.alt = alt;
+  img.dataset.imageSource = desired;
   // Probe first so a missing PNG never leaves a broken-image icon on screen.
   const probe = new Image();
-  probe.onload = () => { img.src = desired; };
-  probe.onerror = () => { img.src = fallback; if (onFallback) onFallback(); };
+  probe.onload = () => { if (img.dataset.imageSource === desired) img.src = desired; };
+  probe.onerror = () => {
+    if (img.dataset.imageSource !== desired) return;
+    img.src = fallback; if (onFallback) onFallback();
+  };
   probe.src = desired;
 }
 function togglePanel(panel) { state.selected.has(panel) ? state.selected.delete(panel) : state.selected.add(panel); renderSelection(); renderViewer(); }
