@@ -6,12 +6,16 @@
   <meta name="theme-color" content="#f3f5f2">
   <title></title>
   <link rel="icon" href="assets/logo-placeholder.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=2">
-  <script src="app.js?v=2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="app.js?v=3" defer></script>
 </head>
 <body>
+  <script>
+    // Restore the theme before the dashboard can paint.
+    try { document.body.classList.toggle("dark-mode", localStorage.getItem("theme") === "dark"); } catch {}
+  </script>
   <main class="dashboard">
-    <header class="masthead"><span data-i18n="eyebrow"></span><span id="connection" class="connection" role="status"></span></header>
+    <header class="masthead"><span data-i18n="eyebrow"></span><div class="header-actions"><span id="connection" class="connection" role="status"></span><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false"><span aria-hidden="true">&#127769;</span></button></div></header>
     <section class="overview">
       <div class="brand card">
         <div class="logo-box"><img id="logo" src="assets/logo-placeholder.svg" alt=""></div>

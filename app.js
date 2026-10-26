@@ -31,6 +31,7 @@ const EN = {
   autoRefresh: "Auto-refresh · {seconds}s", connectionError: "Update unavailable · retrying",
   lastUpdated: "Published {time}", notPublished: "Awaiting first publication", scrollLeft: "Scroll plot tabs left",
   scrollRight: "Scroll plot tabs right", plotFrame: "Analysis plot for {panels}",
+  useDarkMode: "Switch to dark mode", useLightMode: "Switch to light mode",
   running: "Running", waiting: "Waiting", error: "Error", availablePlots: "{count} available plots",
   plotNames: {
     "04_baseline_estimation": "Baseline", "05_plot_coincidences": "Coincident pulses",
@@ -86,6 +87,82 @@ const element = (tag, className, text) => { const node = document.createElement(
 const stamp = (id) => /^\d{6}_\d{6}$/.test(id || "") ? `20${id.slice(0,2)}-${id.slice(2,4)}-${id.slice(4,6)} ${id.slice(7,9)}:${id.slice(9,11)}:${id.slice(11,13)}` : I18N.noDataset;
 const formatTime = (date, options) => new Intl.DateTimeFormat("en-GB", { timeZone: state.history.timezone || CONFIG.timezone, ...options }).format(date);
 
+function chartTheme() {
+  const styles = getComputedStyle(document.body);
+  const color = name => styles.getPropertyValue(name).trim();
+  return {surface:color("--surface"), text:color("--ink"), grid:color("--line"),
+    scheme:document.body.classList.contains("dark-mode") ? "dark" : "light"};
+}
+// Also serialized into the sandboxed plot document, which owns its Plotly instance.
+function syncPlotlyTheme(targetWindow, theme) {
+  if (!targetWindow.Plotly) return;
+  targetWindow.document.querySelectorAll(".js-plotly-plot").forEach(chart => {
+    if (!chart._fullLayout) return; // Plotly has not finished initializing this node.
+    const layout = {paper_bgcolor:theme.surface, plot_bgcolor:theme.surface, "font.color":theme.text};
+    Object.keys(chart._fullLayout).filter(key => /^[xy]axis\d*$/.test(key)).forEach(axis => {
+      layout[`${axis}.gridcolor`] = theme.grid;
+      layout[`${axis}.zerolinecolor`] = theme.grid;
+      layout[`${axis}.linecolor`] = theme.grid;
+      layout[`${axis}.tickfont.color`] = theme.text;
+      layout[`${axis}.title.font.color`] = theme.text;
+    });
+    targetWindow.Plotly.relayout(chart, layout).catch(error => console.warn("Could not update plot theme", error));
+  });
+}
+function syncCharts() {
+  const theme = chartTheme();
+  syncPlotlyTheme(window, theme);
+  // The iframe has an opaque origin; communicate without granting allow-same-origin.
+  $("plot-frame").contentWindow?.postMessage({type:"dashboard-theme", theme}, "*");
+}
+function applyTheme(dark) {
+  document.body.classList.toggle("dark-mode", dark);
+  const toggle = $("theme-toggle"), label = I18N[dark ? "useLightMode" : "useDarkMode"];
+  toggle.firstElementChild.textContent = dark ? "\u2600\uFE0F" : "\uD83C\uDF19";
+  toggle.setAttribute("aria-pressed", String(dark));
+  toggle.setAttribute("aria-label", label);
+  toggle.title = label;
+  document.querySelector('meta[name="theme-color"]').content = getComputedStyle(document.body).getPropertyValue("--paper").trim();
+  syncCharts();
+}
+function initializeTheme() {
+  applyTheme(document.body.classList.contains("dark-mode"));
+  $("theme-toggle").addEventListener("click", () => {
+    const dark = !document.body.classList.contains("dark-mode");
+    applyTheme(dark);
+    try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch { /* Theme still works when storage is unavailable. */ }
+  });
+  $("plot-frame").addEventListener("load", syncCharts);
+}
+function plotThemeBridge(theme, sync) {
+  function apply() {
+    document.documentElement.style.backgroundColor = theme.surface;
+    document.documentElement.style.colorScheme = theme.scheme;
+    if (document.body) {
+      document.body.style.backgroundColor = theme.surface;
+      document.body.style.color = theme.text;
+    }
+    sync(window, theme);
+  }
+  window.addEventListener("message", event => {
+    if (event.source !== parent || event.data?.type !== "dashboard-theme") return;
+    theme = event.data.theme;
+    apply();
+  });
+  window.addEventListener("load", apply);
+  apply();
+}
+function themedPlotDocument(html, url) {
+  const doc = new DOMParser().parseFromString(html, "text/html");
+  // srcdoc otherwise resolves the shared Plotly bundle relative to the dashboard.
+  const base = doc.createElement("base"); base.href = new URL(url, document.baseURI).href;
+  doc.head.prepend(base);
+  const bridge = doc.createElement("script");
+  bridge.textContent = `(${plotThemeBridge.toString()})(${JSON.stringify(chartTheme())}, ${syncPlotlyTheme.toString()});`;
+  base.after(bridge);
+  return "<!doctype html>\n" + doc.documentElement.outerHTML;
+}
+
 function currentDataset() {
   return state.mode === "latest" ? state.history.datasets[0] : state.history.datasets.find(item => item.id === state.historyId);
 }
@@ -126,6 +203,7 @@ function selectedDatasetInterval() {
 }
 
 function initialize() {
+  initializeTheme();
   document.title = I18N.pageTitle;
   document.querySelectorAll("[data-i18n]").forEach(node => { node.textContent = I18N[node.dataset.i18n]; });
   const arrayViewTag = document.querySelector('[data-i18n="arrayView"]');
@@ -312,6 +390,7 @@ function updateScrollButtons() {
 function emptyPlot(title, description) {
   frameAbort?.abort(); state.frameRequest++;
   state.frameUrl = null; $("plot-frame").hidden = true; $("plot-frame").removeAttribute("src");
+  $("plot-frame").removeAttribute("srcdoc");
   $("open-plot").hidden = true; $("plot-empty").hidden = false;
   $("empty-title").textContent = I18N[title]; $("empty-description").textContent = I18N[description];
 }
@@ -321,12 +400,13 @@ async function loadPlot(url, key) {
   const request = ++state.frameRequest;
   frameAbort = new AbortController();
   try {
-    const response = await fetch(url, {method:"HEAD", cache:"no-cache", signal:frameAbort.signal});
+    const response = await fetch(url, {cache:"no-cache", signal:frameAbort.signal});
     if (!response.ok) throw new Error(String(response.status));
+    const html = await response.text();
     if (request !== state.frameRequest) return;
     state.frameUrl = url;
     const frame = $("plot-frame"); frame.title = t("plotFrame", {panels:key});
-    frame.src = url; frame.hidden = false; $("plot-empty").hidden = true;
+    frame.srcdoc = themedPlotDocument(html, url); frame.hidden = false; $("plot-empty").hidden = true;
     $("open-plot").href = url; $("open-plot").hidden = false;
   } catch (error) {
     if (error.name !== "AbortError" && request === state.frameRequest) emptyPlot("failedTitle", "failedDescription");
@@ -347,7 +427,7 @@ function getTemperatureChart() {
   const yLabels = [], xLabels = [];
   for (let i=0; i<3; i++) {
     const y = 112 - i * 49;
-    axes.append(svgNode("line", {x1:30,y1:y,x2:628,y2:y,stroke:"#e9eee8","stroke-dasharray":"3 5"}));
+    axes.append(svgNode("line", {class:"temperature-grid",x1:30,y1:y,x2:628,y2:y,"stroke-dasharray":"3 5"}));
     const label = svgNode("text", {x:20,y:y+3,"text-anchor":"end"});
     yLabels.push(label); axes.append(label);
   }
@@ -356,9 +436,8 @@ function getTemperatureChart() {
     xLabels.push(label); axes.append(label);
   }
   const line = svgNode("polyline", {id:"temperature-line",fill:"none",stroke:CONFIG.panelColors.A,"stroke-width":2,"stroke-linejoin":"round"});
-  const band = svgNode("rect", {id:"temperature-dataset-band",y:14,height:98,fill:"#d6ac4e","fill-opacity":0.23,"pointer-events":"none"});
+  const band = svgNode("rect", {id:"temperature-dataset-band",y:14,height:98,"fill-opacity":0.23,"pointer-events":"none"});
   const bandLabel = svgNode("text", {id:"temperature-dataset-label",y:10,"text-anchor":"middle","pointer-events":"none"});
-  bandLabel.style.fill = "#8b6720";
   bandLabel.style.fontWeight = "600";
   // The duration rectangle sits behind the grid and readings; its label sits above them.
   svg.append(band, axes, line, dots, bandLabel);
@@ -413,7 +492,7 @@ function renderTemperature() {
     starts.set(row.time, chart.positions.get(row.time) || previousEnd || targets.get(row.time));
     let dot = chart.nodes.get(row.time);
     if (!dot) {
-      dot = svgNode("circle", {r:2.5,fill:CONFIG.panelColors.A,opacity:.8,"data-time":row.time});
+      dot = svgNode("circle", {class:"temperature-dot",r:2.5,opacity:.8,"data-time":row.time});
       dot.append(svgNode("title", {})); chart.dots.append(dot); chart.nodes.set(row.time,dot);
     }
     dot.firstChild.textContent = `${seriesName} · ${row.celsius.toFixed(1)} ${I18N.celsius} · ${formatTime(new Date(row.time), {month:"short",day:"2-digit",hour:"2-digit",minute:"2-digit"})}`;

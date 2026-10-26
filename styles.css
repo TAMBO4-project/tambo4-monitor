@@ -9,7 +9,47 @@
   --pale:#eaf3ee;
   --amber:#ad7919;
   --red:#c0524d;
+  --subtle:#f7f9f6;
+  --controls:#fdfefd;
+  --selected-line:#cbded1;
+  --faint:#b0bab3;
+  --focus:#9abbb0;
+  --badge-bg:#f4f3e9;
+  --badge-line:#e8e4ce;
+  --badge-ink:#927a43;
+  --chart-grid:#e9eee8;
+  --chart-band:#d6ac4e;
+  --chart-band-ink:#8b6720;
+  --empty-glow:#f7faf5;
+  --empty-line:#dce7dc;
+  --empty-ink:#95b3a1;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+body.dark-mode {
+  color-scheme:dark;
+  --paper:#121212;
+  --surface:#1e1e1e;
+  --ink:#e0e0e0;
+  --muted:#a3afa9;
+  --line:#383e3a;
+  --green:#7bc9a9;
+  --pale:#253c32;
+  --amber:#e4b75d;
+  --red:#ef8d87;
+  --subtle:#252925;
+  --controls:#222622;
+  --selected-line:#476955;
+  --faint:#86958c;
+  --focus:#98d9bc;
+  --badge-bg:#373124;
+  --badge-line:#655637;
+  --badge-ink:#e4c586;
+  --chart-grid:#383e3a;
+  --chart-band:#e4b75d;
+  --chart-band-ink:#e4c586;
+  --empty-glow:#253128;
+  --empty-line:#476955;
+  --empty-ink:#8dbda2;
 }
 * {
   box-sizing:border-box;
@@ -30,7 +70,7 @@ button {
   cursor:pointer;
 }
 button:focus-visible,a:focus-visible {
-  outline:3px solid #9abbb0;
+  outline:3px solid var(--focus);
   outline-offset:3px;
 }
 button {
@@ -68,6 +108,26 @@ a {
   letter-spacing:.2px;
   color:var(--muted);
   font-size:11px;
+}
+.header-actions {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.theme-toggle {
+  display:grid;
+  place-items:center;
+  width:30px;
+  height:30px;
+  padding:0;
+  border:1px solid var(--line);
+  border-radius:7px;
+  background:var(--surface);
+  font-size:15px;
+  line-height:1;
+}
+.theme-toggle:hover {
+  background:var(--pale);
 }
 .connection:before {
   content:"";
@@ -141,7 +201,7 @@ a {
   letter-spacing:.1px;
 }
 .section-number {
-  color:#b0bab3;
+  color:var(--faint);
   font-size:10px;
   font-variant-numeric:tabular-nums;
 }
@@ -204,9 +264,9 @@ a {
 }
 .badge {
   font-size:9px;
-  background:#f4f3e9;
-  border:1px solid #e8e4ce;
-  color:#927a43;
+  background:var(--badge-bg);
+  border:1px solid var(--badge-line);
+  color:var(--badge-ink);
   padding:3px 7px;
   border-radius:4px;
   letter-spacing:.8px;
@@ -251,8 +311,23 @@ a {
 }
 #temperature-chart text {
   font-family:var(--font);
-  fill:#87918b;
+  fill:var(--muted);
   font-size:10px;
+}
+#temperature-chart .temperature-grid {
+  stroke:var(--chart-grid);
+}
+#temperature-line,#temperature-chart .temperature-dot {
+  stroke:var(--green);
+}
+#temperature-chart .temperature-dot {
+  fill:var(--green);
+}
+#temperature-dataset-band {
+  fill:var(--chart-band);
+}
+#temperature-chart #temperature-dataset-label {
+  fill:var(--chart-band-ink);
 }
 .chart-empty {
   position:absolute;
@@ -366,14 +441,14 @@ a {
 .chip {
   border:1px solid var(--line);
   border-radius:5px;
-  background:#f7f9f6;
+  background:var(--subtle);
   padding:6px 12px;
   font-size:11px;
 }
 .chip.selected {
   background:var(--pale);
   color:var(--green);
-  border-color:#cbded1;
+  border-color:var(--selected-line);
 }
 .selection-summary {
   font-size:10px;
@@ -404,7 +479,7 @@ a {
 }
 .tiny-grid {
   font-size:23px;
-  color:#9bafa2;
+  color:var(--muted);
 }
 .viewer {
   min-width:0;
@@ -445,13 +520,13 @@ a {
   padding:0 14px;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
-  background:#fdfefd;
+  background:var(--controls);
   min-height:47px;
 }
 .scroll-button {
   border:0;
   background:none;
-  color:#768b7e;
+  color:var(--muted);
   font-size:22px;
   padding:0 6px;
 }
@@ -526,7 +601,7 @@ a {
   border:1px solid var(--line);
   border-radius:8px;
   padding:7px;
-  background:#fff;
+  background:var(--surface);
   box-shadow:0 10px 30px #2444381c;
   z-index:3;
 }
@@ -559,7 +634,7 @@ a {
   position:relative;
   flex:1;
   min-height:350px;
-  background:#fff;
+  background:var(--surface);
 }
 .plot-stage iframe {
   width:100%;
@@ -578,11 +653,11 @@ a {
   justify-content:center;
   padding:30px;
   text-align:center;
-  background:radial-gradient(ellipse at center,#f7faf5 0,white 65%);
+  background:radial-gradient(ellipse at center,var(--empty-glow) 0,var(--surface) 65%);
 }
 .empty-icon {
-  border:1px solid #dce7dc;
-  color:#95b3a1;
+  border:1px solid var(--empty-line);
+  color:var(--empty-ink);
   font-size:48px;
   height:78px;
   width:78px;
@@ -617,7 +692,7 @@ a {
   justify-content:space-between;
   gap:15px;
   margin-top:17px;
-  color:#87948a;
+  color:var(--muted);
   font-size:9px;
   letter-spacing:.2px;
 }
