@@ -2,7 +2,7 @@
   "version": 1,
   "timezone": "America/Lima",
   "retention_hours": 24,
-  "latest": "261027_120926",
+  "latest": "261027_121400",
   "panel_sets": [
     "A",
     "B",
@@ -21,6 +21,141 @@
     "A-B-C-D"
   ],
   "datasets": [
+    {
+      "id": "261027_121400",
+      "timestamp": "2026-10-27T12:14:00-05:00",
+      "analyzed_at": "2026-10-27T17:14:46+00:00",
+      "panel_sets": {
+        "A": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "A": "empty_data"
+          }
+        },
+        "B": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "B": "empty_data"
+          }
+        },
+        "C": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "C": "empty_data"
+          }
+        },
+        "D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "D": "empty_data"
+          }
+        },
+        "A-B": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "A": "empty_data",
+            "B": "empty_data"
+          }
+        },
+        "A-C": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "A": "empty_data",
+            "C": "empty_data"
+          }
+        },
+        "A-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "A": "empty_data",
+            "D": "empty_data"
+          }
+        },
+        "B-C": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "B": "empty_data",
+            "C": "empty_data"
+          }
+        },
+        "B-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "B": "empty_data",
+            "D": "empty_data"
+          }
+        },
+        "C-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "C": "empty_data",
+            "D": "empty_data"
+          }
+        },
+        "A-B-C": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "A": "empty_data",
+            "B": "empty_data",
+            "C": "empty_data"
+          }
+        },
+        "A-B-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "A": "empty_data",
+            "B": "empty_data",
+            "D": "empty_data"
+          }
+        },
+        "A-C-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "A": "empty_data",
+            "C": "empty_data",
+            "D": "empty_data"
+          }
+        },
+        "B-C-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "B": "empty_data",
+            "C": "empty_data",
+            "D": "empty_data"
+          }
+        },
+        "A-B-C-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "A": "empty_data",
+            "B": "empty_data",
+            "C": "empty_data",
+            "D": "empty_data"
+          }
+        }
+      },
+      "panel_errors": {
+        "A": "empty_data",
+        "B": "empty_data",
+        "C": "empty_data",
+        "D": "empty_data"
+      }
+    },
     {
       "id": "261027_120926",
       "timestamp": "2026-10-27T12:09:26-05:00",
