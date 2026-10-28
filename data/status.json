@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "observed_dataset": "261028_040000",
+  "observed_dataset": "261028_124854",
   "latest_analyzed": "261027_172725",
   "panels": {
     "A": {
@@ -22,5 +22,5 @@
   },
   "completion_rule": "next_directory",
   "timezone": "America/Lima",
-  "updated_at": "2026-10-28T14:51:19+00:00"
+  "updated_at": "2026-10-28T17:51:48+00:00"
 }
