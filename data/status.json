@@ -8,8 +8,8 @@
       "detail": "receiving_data"
     },
     "B": {
-      "status": "Waiting",
-      "detail": "awaiting_data"
+      "status": "Running",
+      "detail": "receiving_data"
     },
     "C": {
       "status": "Waiting",
@@ -22,5 +22,5 @@
   },
   "completion_rule": "next_directory",
   "timezone": "America/Lima",
-  "updated_at": "2026-10-28T23:49:32+00:00"
+  "updated_at": "2026-10-28T23:59:38+00:00"
 }
