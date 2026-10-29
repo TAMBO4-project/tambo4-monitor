@@ -2,7 +2,7 @@
   "version": 1,
   "timezone": "America/Lima",
   "retention_hours": 24,
-  "latest": "261028_214854",
+  "latest": "261029_004854",
   "panel_sets": [
     "A",
     "B",
@@ -21,6 +21,395 @@
     "A-B-C-D"
   ],
   "datasets": [
+    {
+      "id": "261029_004854",
+      "timestamp": "2026-10-29T00:48:54-05:00",
+      "analyzed_at": "2026-10-29T09:01:06+00:00",
+      "panel_sets": {
+        "A": {
+          "plots": [
+            {
+              "id": "04_baseline_estimation",
+              "filename": "04_baseline_estimation.html"
+            },
+            {
+              "id": "08_adc_peak_histogram",
+              "filename": "08_adc_peak_histogram.html"
+            },
+            {
+              "id": "09_charge_calculation",
+              "filename": "09_charge_calculation.html"
+            },
+            {
+              "id": "10_charge_histogram_individual",
+              "filename": "10_charge_histogram_individual.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_A",
+              "filename": "11_plot_random_samples_Channel_A.html"
+            },
+            {
+              "id": "12_pulse_duration_histogram",
+              "filename": "12_pulse_duration_histogram.html"
+            },
+            {
+              "id": "16_multipulse_visualizer",
+              "filename": "16_multipulse_visualizer.html"
+            },
+            {
+              "id": "16_plot_pulse_rates",
+              "filename": "16_plot_pulse_rates.html"
+            },
+            {
+              "id": "17_inter_pulse_time_difference",
+              "filename": "17_inter_pulse_time_difference.html"
+            }
+          ],
+          "state": "ready"
+        },
+        "B": {
+          "plots": [
+            {
+              "id": "04_baseline_estimation",
+              "filename": "04_baseline_estimation.html"
+            },
+            {
+              "id": "08_adc_peak_histogram",
+              "filename": "08_adc_peak_histogram.html"
+            },
+            {
+              "id": "09_charge_calculation",
+              "filename": "09_charge_calculation.html"
+            },
+            {
+              "id": "10_charge_histogram_individual",
+              "filename": "10_charge_histogram_individual.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_B",
+              "filename": "11_plot_random_samples_Channel_B.html"
+            },
+            {
+              "id": "12_pulse_duration_histogram",
+              "filename": "12_pulse_duration_histogram.html"
+            },
+            {
+              "id": "16_multipulse_visualizer",
+              "filename": "16_multipulse_visualizer.html"
+            },
+            {
+              "id": "16_plot_pulse_rates",
+              "filename": "16_plot_pulse_rates.html"
+            },
+            {
+              "id": "17_inter_pulse_time_difference",
+              "filename": "17_inter_pulse_time_difference.html"
+            }
+          ],
+          "state": "ready"
+        },
+        "C": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "C": "missing_data"
+          }
+        },
+        "D": {
+          "plots": [
+            {
+              "id": "04_baseline_estimation",
+              "filename": "04_baseline_estimation.html"
+            },
+            {
+              "id": "08_adc_peak_histogram",
+              "filename": "08_adc_peak_histogram.html"
+            },
+            {
+              "id": "09_charge_calculation",
+              "filename": "09_charge_calculation.html"
+            },
+            {
+              "id": "10_charge_histogram_individual",
+              "filename": "10_charge_histogram_individual.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_D",
+              "filename": "11_plot_random_samples_Channel_D.html"
+            },
+            {
+              "id": "12_pulse_duration_histogram",
+              "filename": "12_pulse_duration_histogram.html"
+            },
+            {
+              "id": "16_multipulse_visualizer",
+              "filename": "16_multipulse_visualizer.html"
+            },
+            {
+              "id": "16_plot_pulse_rates",
+              "filename": "16_plot_pulse_rates.html"
+            },
+            {
+              "id": "17_inter_pulse_time_difference",
+              "filename": "17_inter_pulse_time_difference.html"
+            }
+          ],
+          "state": "ready"
+        },
+        "A-B": {
+          "plots": [
+            {
+              "id": "04_baseline_estimation",
+              "filename": "04_baseline_estimation.html"
+            },
+            {
+              "id": "09_charge_calculation",
+              "filename": "09_charge_calculation.html"
+            },
+            {
+              "id": "10_charge_histogram_individual",
+              "filename": "10_charge_histogram_individual.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_A",
+              "filename": "11_plot_random_samples_Channel_A.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_B",
+              "filename": "11_plot_random_samples_Channel_B.html"
+            },
+            {
+              "id": "12_pulse_duration_histogram",
+              "filename": "12_pulse_duration_histogram.html"
+            },
+            {
+              "id": "16_multipulse_visualizer",
+              "filename": "16_multipulse_visualizer.html"
+            },
+            {
+              "id": "16_plot_pulse_rates",
+              "filename": "16_plot_pulse_rates.html"
+            },
+            {
+              "id": "17_inter_pulse_time_difference",
+              "filename": "17_inter_pulse_time_difference.html"
+            }
+          ],
+          "state": "ready"
+        },
+        "A-C": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "C": "missing_data"
+          }
+        },
+        "A-D": {
+          "plots": [
+            {
+              "id": "04_baseline_estimation",
+              "filename": "04_baseline_estimation.html"
+            },
+            {
+              "id": "05_plot_coincidences_ALL",
+              "filename": "05_plot_coincidences_ALL.html"
+            },
+            {
+              "id": "08_adc_peak_histogram",
+              "filename": "08_adc_peak_histogram.html"
+            },
+            {
+              "id": "09_charge_calculation",
+              "filename": "09_charge_calculation.html"
+            },
+            {
+              "id": "10_charge_histogram_ALL",
+              "filename": "10_charge_histogram_ALL.html"
+            },
+            {
+              "id": "10_charge_histogram_individual",
+              "filename": "10_charge_histogram_individual.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_A",
+              "filename": "11_plot_random_samples_Channel_A.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_D",
+              "filename": "11_plot_random_samples_Channel_D.html"
+            },
+            {
+              "id": "12_pulse_duration_histogram",
+              "filename": "12_pulse_duration_histogram.html"
+            },
+            {
+              "id": "16_multipulse_visualizer",
+              "filename": "16_multipulse_visualizer.html"
+            },
+            {
+              "id": "16_plot_pulse_rates",
+              "filename": "16_plot_pulse_rates.html"
+            },
+            {
+              "id": "17_coincidence_time_difference",
+              "filename": "17_coincidence_time_difference.html"
+            },
+            {
+              "id": "17_inter_pulse_time_difference",
+              "filename": "17_inter_pulse_time_difference.html"
+            }
+          ],
+          "state": "ready"
+        },
+        "B-C": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "C": "missing_data"
+          }
+        },
+        "B-D": {
+          "plots": [
+            {
+              "id": "04_baseline_estimation",
+              "filename": "04_baseline_estimation.html"
+            },
+            {
+              "id": "05_plot_coincidences_ALL",
+              "filename": "05_plot_coincidences_ALL.html"
+            },
+            {
+              "id": "08_adc_peak_histogram",
+              "filename": "08_adc_peak_histogram.html"
+            },
+            {
+              "id": "09_charge_calculation",
+              "filename": "09_charge_calculation.html"
+            },
+            {
+              "id": "10_charge_histogram_ALL",
+              "filename": "10_charge_histogram_ALL.html"
+            },
+            {
+              "id": "10_charge_histogram_individual",
+              "filename": "10_charge_histogram_individual.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_B",
+              "filename": "11_plot_random_samples_Channel_B.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_D",
+              "filename": "11_plot_random_samples_Channel_D.html"
+            },
+            {
+              "id": "12_pulse_duration_histogram",
+              "filename": "12_pulse_duration_histogram.html"
+            },
+            {
+              "id": "16_multipulse_visualizer",
+              "filename": "16_multipulse_visualizer.html"
+            },
+            {
+              "id": "16_plot_pulse_rates",
+              "filename": "16_plot_pulse_rates.html"
+            },
+            {
+              "id": "17_coincidence_time_difference",
+              "filename": "17_coincidence_time_difference.html"
+            },
+            {
+              "id": "17_inter_pulse_time_difference",
+              "filename": "17_inter_pulse_time_difference.html"
+            }
+          ],
+          "state": "ready"
+        },
+        "C-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "C": "missing_data"
+          }
+        },
+        "A-B-C": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "C": "missing_data"
+          }
+        },
+        "A-B-D": {
+          "plots": [
+            {
+              "id": "04_baseline_estimation",
+              "filename": "04_baseline_estimation.html"
+            },
+            {
+              "id": "09_charge_calculation",
+              "filename": "09_charge_calculation.html"
+            },
+            {
+              "id": "10_charge_histogram_individual",
+              "filename": "10_charge_histogram_individual.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_A",
+              "filename": "11_plot_random_samples_Channel_A.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_B",
+              "filename": "11_plot_random_samples_Channel_B.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_D",
+              "filename": "11_plot_random_samples_Channel_D.html"
+            },
+            {
+              "id": "12_pulse_duration_histogram",
+              "filename": "12_pulse_duration_histogram.html"
+            },
+            {
+              "id": "16_multipulse_visualizer",
+              "filename": "16_multipulse_visualizer.html"
+            },
+            {
+              "id": "16_plot_pulse_rates",
+              "filename": "16_plot_pulse_rates.html"
+            },
+            {
+              "id": "17_inter_pulse_time_difference",
+              "filename": "17_inter_pulse_time_difference.html"
+            }
+          ],
+          "state": "ready"
+        },
+        "A-C-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "C": "missing_data"
+          }
+        },
+        "B-C-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "C": "missing_data"
+          }
+        },
+        "A-B-C-D": {
+          "plots": [],
+          "state": "unavailable",
+          "panel_errors": {
+            "C": "missing_data"
+          }
+        }
+      },
+      "panel_errors": {
+        "C": "missing_data"
+      }
+    },
     {
       "id": "261028_214854",
       "timestamp": "2026-10-28T21:48:54-05:00",
