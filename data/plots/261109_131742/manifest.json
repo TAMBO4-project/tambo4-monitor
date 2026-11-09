@@ -1,7 +1,7 @@
 {
-  "id": "261109_131442",
-  "timestamp": "2026-11-09T13:14:42-05:00",
-  "analyzed_at": "2026-11-09T18:17:56+00:00",
+  "id": "261109_131742",
+  "timestamp": "2026-11-09T13:17:42-05:00",
+  "analyzed_at": "2026-11-09T18:20:55+00:00",
   "panel_sets": {
     "A": {
       "plots": [
@@ -71,6 +71,10 @@
           "filename": "12_pulse_duration_histogram.html"
         },
         {
+          "id": "16_multipulse_visualizer",
+          "filename": "16_multipulse_visualizer.html"
+        },
+        {
           "id": "16_plot_pulse_rates",
           "filename": "16_plot_pulse_rates.html"
         },
@@ -113,10 +117,6 @@
         {
           "id": "12_pulse_duration_histogram",
           "filename": "12_pulse_duration_histogram.html"
-        },
-        {
-          "id": "16_multipulse_visualizer",
-          "filename": "16_multipulse_visualizer.html"
         },
         {
           "id": "16_plot_pulse_rates",
@@ -250,6 +250,10 @@
         {
           "id": "12_pulse_duration_histogram",
           "filename": "12_pulse_duration_histogram.html"
+        },
+        {
+          "id": "16_multipulse_visualizer",
+          "filename": "16_multipulse_visualizer.html"
         },
         {
           "id": "16_plot_pulse_rates",
