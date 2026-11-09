@@ -1,0 +1,135 @@
+{
+  "id": "261109_120233",
+  "timestamp": "2026-11-09T12:02:33-05:00",
+  "analyzed_at": "2026-11-09T17:03:15+00:00",
+  "panel_sets": {
+    "A": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "A": "empty_data"
+      }
+    },
+    "B": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "B": "empty_data"
+      }
+    },
+    "C": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "C": "missing_data"
+      }
+    },
+    "D": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "D": "missing_data"
+      }
+    },
+    "A-B": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "A": "empty_data",
+        "B": "empty_data"
+      }
+    },
+    "A-C": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "A": "empty_data",
+        "C": "missing_data"
+      }
+    },
+    "A-D": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "A": "empty_data",
+        "D": "missing_data"
+      }
+    },
+    "B-C": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "B": "empty_data",
+        "C": "missing_data"
+      }
+    },
+    "B-D": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "B": "empty_data",
+        "D": "missing_data"
+      }
+    },
+    "C-D": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "C": "missing_data",
+        "D": "missing_data"
+      }
+    },
+    "A-B-C": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "A": "empty_data",
+        "B": "empty_data",
+        "C": "missing_data"
+      }
+    },
+    "A-B-D": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "A": "empty_data",
+        "B": "empty_data",
+        "D": "missing_data"
+      }
+    },
+    "A-C-D": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "A": "empty_data",
+        "C": "missing_data",
+        "D": "missing_data"
+      }
+    },
+    "B-C-D": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "B": "empty_data",
+        "C": "missing_data",
+        "D": "missing_data"
+      }
+    },
+    "A-B-C-D": {
+      "plots": [],
+      "state": "unavailable",
+      "panel_errors": {
+        "A": "empty_data",
+        "B": "empty_data",
+        "C": "missing_data",
+        "D": "missing_data"
+      }
+    }
+  },
+  "panel_errors": {
+    "A": "empty_data",
+    "B": "empty_data",
+    "C": "missing_data",
+    "D": "missing_data"
+  }
+}
