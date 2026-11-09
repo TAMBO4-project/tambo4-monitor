@@ -4,8 +4,8 @@
   "latest_analyzed": "261109_114912",
   "panels": {
     "A": {
-      "status": "Waiting",
-      "detail": "awaiting_data"
+      "status": "Running",
+      "detail": "receiving_data"
     },
     "B": {
       "status": "Waiting",
@@ -16,11 +16,11 @@
       "detail": "empty_data"
     },
     "D": {
-      "status": "Waiting",
-      "detail": "awaiting_data"
+      "status": "Running",
+      "detail": "receiving_data"
     }
   },
   "completion_rule": "next_directory",
   "timezone": "America/Lima",
-  "updated_at": "2026-11-09T16:53:00+00:00"
+  "updated_at": "2026-11-09T16:53:55+00:00"
 }
