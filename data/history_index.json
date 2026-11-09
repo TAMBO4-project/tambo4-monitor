@@ -2,7 +2,7 @@
   "version": 1,
   "timezone": "America/Lima",
   "retention_hours": 24,
-  "latest": "261102_154751",
+  "latest": "261109_113135",
   "panel_sets": [
     "A",
     "B",
@@ -22,23 +22,91 @@
   ],
   "datasets": [
     {
-      "id": "261102_154751",
-      "timestamp": "2026-11-02T15:47:51-05:00",
-      "analyzed_at": "2026-11-09T16:33:04+00:00",
+      "id": "261109_113135",
+      "timestamp": "2026-11-09T11:31:35-05:00",
+      "analyzed_at": "2026-11-09T16:33:12+00:00",
       "panel_sets": {
         "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
+          "plots": [
+            {
+              "id": "04_baseline_estimation",
+              "filename": "04_baseline_estimation.html"
+            },
+            {
+              "id": "08_adc_peak_histogram",
+              "filename": "08_adc_peak_histogram.html"
+            },
+            {
+              "id": "09_charge_calculation",
+              "filename": "09_charge_calculation.html"
+            },
+            {
+              "id": "10_charge_histogram_individual",
+              "filename": "10_charge_histogram_individual.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_A",
+              "filename": "11_plot_random_samples_Channel_A.html"
+            },
+            {
+              "id": "12_pulse_duration_histogram",
+              "filename": "12_pulse_duration_histogram.html"
+            },
+            {
+              "id": "16_multipulse_visualizer",
+              "filename": "16_multipulse_visualizer.html"
+            },
+            {
+              "id": "16_plot_pulse_rates",
+              "filename": "16_plot_pulse_rates.html"
+            },
+            {
+              "id": "17_inter_pulse_time_difference",
+              "filename": "17_inter_pulse_time_difference.html"
+            }
+          ],
+          "state": "ready"
         },
         "B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
+          "plots": [
+            {
+              "id": "04_baseline_estimation",
+              "filename": "04_baseline_estimation.html"
+            },
+            {
+              "id": "08_adc_peak_histogram",
+              "filename": "08_adc_peak_histogram.html"
+            },
+            {
+              "id": "09_charge_calculation",
+              "filename": "09_charge_calculation.html"
+            },
+            {
+              "id": "10_charge_histogram_individual",
+              "filename": "10_charge_histogram_individual.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_B",
+              "filename": "11_plot_random_samples_Channel_B.html"
+            },
+            {
+              "id": "12_pulse_duration_histogram",
+              "filename": "12_pulse_duration_histogram.html"
+            },
+            {
+              "id": "16_multipulse_visualizer",
+              "filename": "16_multipulse_visualizer.html"
+            },
+            {
+              "id": "16_plot_pulse_rates",
+              "filename": "16_plot_pulse_rates.html"
+            },
+            {
+              "id": "17_inter_pulse_time_difference",
+              "filename": "17_inter_pulse_time_difference.html"
+            }
+          ],
+          "state": "ready"
         },
         "C": {
           "plots": [],
@@ -51,22 +119,54 @@
           "plots": [],
           "state": "unavailable",
           "panel_errors": {
-            "D": "empty_data"
+            "D": "insufficient_baseline"
           }
         },
         "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
+          "plots": [
+            {
+              "id": "04_baseline_estimation",
+              "filename": "04_baseline_estimation.html"
+            },
+            {
+              "id": "09_charge_calculation",
+              "filename": "09_charge_calculation.html"
+            },
+            {
+              "id": "10_charge_histogram_individual",
+              "filename": "10_charge_histogram_individual.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_A",
+              "filename": "11_plot_random_samples_Channel_A.html"
+            },
+            {
+              "id": "11_plot_random_samples_Channel_B",
+              "filename": "11_plot_random_samples_Channel_B.html"
+            },
+            {
+              "id": "12_pulse_duration_histogram",
+              "filename": "12_pulse_duration_histogram.html"
+            },
+            {
+              "id": "16_multipulse_visualizer",
+              "filename": "16_multipulse_visualizer.html"
+            },
+            {
+              "id": "16_plot_pulse_rates",
+              "filename": "16_plot_pulse_rates.html"
+            },
+            {
+              "id": "17_inter_pulse_time_difference",
+              "filename": "17_inter_pulse_time_difference.html"
+            }
+          ],
+          "state": "ready"
         },
         "A-C": {
           "plots": [],
           "state": "unavailable",
           "panel_errors": {
-            "A": "empty_data",
             "C": "empty_data"
           }
         },
@@ -74,15 +174,13 @@
           "plots": [],
           "state": "unavailable",
           "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
+            "D": "insufficient_baseline"
           }
         },
         "B-C": {
           "plots": [],
           "state": "unavailable",
           "panel_errors": {
-            "B": "empty_data",
             "C": "empty_data"
           }
         },
@@ -90,8 +188,7 @@
           "plots": [],
           "state": "unavailable",
           "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
+            "D": "insufficient_baseline"
           }
         },
         "C-D": {
@@ -99,15 +196,13 @@
           "state": "unavailable",
           "panel_errors": {
             "C": "empty_data",
-            "D": "empty_data"
+            "D": "insufficient_baseline"
           }
         },
         "A-B-C": {
           "plots": [],
           "state": "unavailable",
           "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
             "C": "empty_data"
           }
         },
@@ -115,1676 +210,37 @@
           "plots": [],
           "state": "unavailable",
           "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
+            "D": "insufficient_baseline"
           }
         },
         "A-C-D": {
           "plots": [],
           "state": "unavailable",
           "panel_errors": {
-            "A": "empty_data",
             "C": "empty_data",
-            "D": "empty_data"
+            "D": "insufficient_baseline"
           }
         },
         "B-C-D": {
           "plots": [],
           "state": "unavailable",
           "panel_errors": {
-            "B": "empty_data",
             "C": "empty_data",
-            "D": "empty_data"
+            "D": "insufficient_baseline"
           }
         },
         "A-B-C-D": {
           "plots": [],
           "state": "unavailable",
           "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
             "C": "empty_data",
-            "D": "empty_data"
+            "D": "insufficient_baseline"
           }
         }
       },
       "panel_errors": {
-        "A": "empty_data",
-        "B": "empty_data",
         "C": "empty_data",
-        "D": "empty_data"
-      }
-    },
-    {
-      "id": "261102_154627",
-      "timestamp": "2026-11-02T15:46:27-05:00",
-      "analyzed_at": "2026-11-02T20:48:19+00:00",
-      "panel_sets": {
-        "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "B": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "11_plot_random_samples_Channel_B",
-              "filename": "11_plot_random_samples_Channel_B.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_multipulse_visualizer",
-              "filename": "16_multipulse_visualizer.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "A-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "A-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "11_plot_random_samples_Channel_B",
-              "filename": "11_plot_random_samples_Channel_B.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_multipulse_visualizer",
-              "filename": "16_multipulse_visualizer.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "A-B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        }
-      },
-      "panel_errors": {
-        "A": "empty_data",
-        "D": "empty_data"
-      }
-    },
-    {
-      "id": "261102_154320",
-      "timestamp": "2026-11-02T15:43:20-05:00",
-      "analyzed_at": "2026-11-02T20:46:35+00:00",
-      "panel_sets": {
-        "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data"
-          }
-        },
-        "B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data"
-          }
-        },
-        "C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "missing_data"
-          }
-        },
-        "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data"
-          }
-        },
-        "A-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data"
-          }
-        },
-        "A-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data"
-          }
-        },
-        "B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "missing_data"
-          }
-        },
-        "A-B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data"
-          }
-        },
-        "A-B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "A-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "A-B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        }
-      },
-      "panel_errors": {
-        "A": "missing_data",
-        "B": "missing_data",
-        "D": "missing_data"
-      }
-    },
-    {
-      "id": "261102_154250",
-      "timestamp": "2026-11-02T15:42:50-05:00",
-      "analyzed_at": "2026-11-02T20:43:30+00:00",
-      "panel_sets": {
-        "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
-        },
-        "C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
-        },
-        "A-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "A-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
-        },
-        "B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
-        },
-        "A-B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        }
-      },
-      "panel_errors": {
-        "A": "empty_data",
-        "B": "empty_data",
-        "D": "empty_data"
-      }
-    },
-    {
-      "id": "261102_153951",
-      "timestamp": "2026-11-02T15:39:51-05:00",
-      "analyzed_at": "2026-11-02T20:42:55+00:00",
-      "panel_sets": {
-        "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
-        },
-        "C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
-        },
-        "A-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "A-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
-        },
-        "B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
-        },
-        "A-B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        }
-      },
-      "panel_errors": {
-        "A": "empty_data",
-        "B": "empty_data",
-        "D": "empty_data"
-      }
-    },
-    {
-      "id": "261102_153700",
-      "timestamp": "2026-11-02T15:37:00-05:00",
-      "analyzed_at": "2026-11-02T20:40:01+00:00",
-      "panel_sets": {
-        "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data"
-          }
-        },
-        "B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data"
-          }
-        },
-        "C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_multipulse_visualizer",
-              "filename": "16_multipulse_visualizer.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "missing_data"
-          }
-        },
-        "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data"
-          }
-        },
-        "A-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data"
-          }
-        },
-        "A-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data"
-          }
-        },
-        "B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "missing_data"
-          }
-        },
-        "A-B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data"
-          }
-        },
-        "A-B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "A-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "A-B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        }
-      },
-      "panel_errors": {
-        "A": "missing_data",
-        "B": "missing_data",
-        "D": "missing_data"
-      }
-    },
-    {
-      "id": "261102_153630",
-      "timestamp": "2026-11-02T15:36:30-05:00",
-      "analyzed_at": "2026-11-02T20:37:13+00:00",
-      "panel_sets": {
-        "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
-        },
-        "C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "11_plot_random_samples_Channel_C",
-              "filename": "11_plot_random_samples_Channel_C.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_multipulse_visualizer",
-              "filename": "16_multipulse_visualizer.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
-        },
-        "A-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "A-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
-        },
-        "B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
-        },
-        "A-B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        }
-      },
-      "panel_errors": {
-        "A": "empty_data",
-        "B": "empty_data",
-        "D": "empty_data"
-      }
-    },
-    {
-      "id": "261102_153514",
-      "timestamp": "2026-11-02T15:35:14-05:00",
-      "analyzed_at": "2026-11-02T20:36:43+00:00",
-      "panel_sets": {
-        "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data"
-          }
-        },
-        "B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data"
-          }
-        },
-        "C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "11_plot_random_samples_Channel_C",
-              "filename": "11_plot_random_samples_Channel_C.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_multipulse_visualizer",
-              "filename": "16_multipulse_visualizer.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "missing_data"
-          }
-        },
-        "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data"
-          }
-        },
-        "A-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data"
-          }
-        },
-        "A-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data"
-          }
-        },
-        "B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "missing_data"
-          }
-        },
-        "A-B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data"
-          }
-        },
-        "A-B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "A-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "A-B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        }
-      },
-      "panel_errors": {
-        "A": "missing_data",
-        "B": "missing_data",
-        "D": "missing_data"
-      }
-    },
-    {
-      "id": "261102_153444",
-      "timestamp": "2026-11-02T15:34:44-05:00",
-      "analyzed_at": "2026-11-02T20:35:51+00:00",
-      "panel_sets": {
-        "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
-        },
-        "C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "11_plot_random_samples_Channel_C",
-              "filename": "11_plot_random_samples_Channel_C.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_multipulse_visualizer",
-              "filename": "16_multipulse_visualizer.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
-        },
-        "A-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "A-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
-        },
-        "B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
-        },
-        "A-B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        }
-      },
-      "panel_errors": {
-        "A": "empty_data",
-        "B": "empty_data",
-        "D": "empty_data"
-      }
-    },
-    {
-      "id": "261102_153134",
-      "timestamp": "2026-11-02T15:31:34-05:00",
-      "analyzed_at": "2026-11-02T20:35:29+00:00",
-      "panel_sets": {
-        "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data"
-          }
-        },
-        "B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data"
-          }
-        },
-        "C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "11_plot_random_samples_Channel_C",
-              "filename": "11_plot_random_samples_Channel_C.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_multipulse_visualizer",
-              "filename": "16_multipulse_visualizer.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "missing_data"
-          }
-        },
-        "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data"
-          }
-        },
-        "A-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data"
-          }
-        },
-        "A-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data"
-          }
-        },
-        "B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "missing_data"
-          }
-        },
-        "A-B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data"
-          }
-        },
-        "A-B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "A-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        },
-        "A-B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "missing_data",
-            "B": "missing_data",
-            "D": "missing_data"
-          }
-        }
-      },
-      "panel_errors": {
-        "A": "missing_data",
-        "B": "missing_data",
-        "D": "missing_data"
-      }
-    },
-    {
-      "id": "261102_153104",
-      "timestamp": "2026-11-02T15:31:04-05:00",
-      "analyzed_at": "2026-11-02T20:31:56+00:00",
-      "panel_sets": {
-        "A": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
-        },
-        "C": {
-          "plots": [
-            {
-              "id": "04_baseline_estimation",
-              "filename": "04_baseline_estimation.html"
-            },
-            {
-              "id": "08_adc_peak_histogram",
-              "filename": "08_adc_peak_histogram.html"
-            },
-            {
-              "id": "09_charge_calculation",
-              "filename": "09_charge_calculation.html"
-            },
-            {
-              "id": "10_charge_histogram_individual",
-              "filename": "10_charge_histogram_individual.html"
-            },
-            {
-              "id": "11_plot_random_samples_Channel_C",
-              "filename": "11_plot_random_samples_Channel_C.html"
-            },
-            {
-              "id": "12_pulse_duration_histogram",
-              "filename": "12_pulse_duration_histogram.html"
-            },
-            {
-              "id": "16_multipulse_visualizer",
-              "filename": "16_multipulse_visualizer.html"
-            },
-            {
-              "id": "16_plot_pulse_rates",
-              "filename": "16_plot_pulse_rates.html"
-            },
-            {
-              "id": "17_inter_pulse_time_difference",
-              "filename": "17_inter_pulse_time_difference.html"
-            }
-          ],
-          "state": "ready"
-        },
-        "D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
-        },
-        "A-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data"
-          }
-        },
-        "A-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data"
-          }
-        },
-        "B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "D": "empty_data"
-          }
-        },
-        "A-B-C": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data"
-          }
-        },
-        "A-B-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        },
-        "A-B-C-D": {
-          "plots": [],
-          "state": "unavailable",
-          "panel_errors": {
-            "A": "empty_data",
-            "B": "empty_data",
-            "D": "empty_data"
-          }
-        }
-      },
-      "panel_errors": {
-        "A": "empty_data",
-        "B": "empty_data",
-        "D": "empty_data"
+        "D": "insufficient_baseline"
       }
     }
   ]
