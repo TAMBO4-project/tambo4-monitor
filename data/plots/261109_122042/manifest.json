@@ -1,7 +1,7 @@
 {
-  "id": "261109_121742",
-  "timestamp": "2026-11-09T12:17:42-05:00",
-  "analyzed_at": "2026-11-09T17:20:56+00:00",
+  "id": "261109_122042",
+  "timestamp": "2026-11-09T12:20:42-05:00",
+  "analyzed_at": "2026-11-09T17:23:54+00:00",
   "panel_sets": {
     "A": {
       "plots": [
@@ -63,16 +63,8 @@
           "filename": "10_charge_histogram_individual.html"
         },
         {
-          "id": "11_plot_random_samples_Channel_B",
-          "filename": "11_plot_random_samples_Channel_B.html"
-        },
-        {
           "id": "12_pulse_duration_histogram",
           "filename": "12_pulse_duration_histogram.html"
-        },
-        {
-          "id": "16_multipulse_visualizer",
-          "filename": "16_multipulse_visualizer.html"
         },
         {
           "id": "16_plot_pulse_rates",
@@ -89,7 +81,7 @@
       "plots": [],
       "state": "unavailable",
       "panel_errors": {
-        "C": "missing_data"
+        "C": "empty_data"
       }
     },
     "D": {
@@ -111,16 +103,8 @@
           "filename": "10_charge_histogram_individual.html"
         },
         {
-          "id": "11_plot_random_samples_Channel_D",
-          "filename": "11_plot_random_samples_Channel_D.html"
-        },
-        {
           "id": "12_pulse_duration_histogram",
           "filename": "12_pulse_duration_histogram.html"
-        },
-        {
-          "id": "16_multipulse_visualizer",
-          "filename": "16_multipulse_visualizer.html"
         },
         {
           "id": "16_plot_pulse_rates",
@@ -152,10 +136,6 @@
           "filename": "11_plot_random_samples_Channel_A.html"
         },
         {
-          "id": "11_plot_random_samples_Channel_B",
-          "filename": "11_plot_random_samples_Channel_B.html"
-        },
-        {
           "id": "12_pulse_duration_histogram",
           "filename": "12_pulse_duration_histogram.html"
         },
@@ -178,7 +158,7 @@
       "plots": [],
       "state": "unavailable",
       "panel_errors": {
-        "C": "missing_data"
+        "C": "empty_data"
       }
     },
     "A-D": {
@@ -198,10 +178,6 @@
         {
           "id": "11_plot_random_samples_Channel_A",
           "filename": "11_plot_random_samples_Channel_A.html"
-        },
-        {
-          "id": "11_plot_random_samples_Channel_D",
-          "filename": "11_plot_random_samples_Channel_D.html"
         },
         {
           "id": "12_pulse_duration_histogram",
@@ -226,7 +202,7 @@
       "plots": [],
       "state": "unavailable",
       "panel_errors": {
-        "C": "missing_data"
+        "C": "empty_data"
       }
     },
     "B-D": {
@@ -244,20 +220,8 @@
           "filename": "10_charge_histogram_individual.html"
         },
         {
-          "id": "11_plot_random_samples_Channel_B",
-          "filename": "11_plot_random_samples_Channel_B.html"
-        },
-        {
-          "id": "11_plot_random_samples_Channel_D",
-          "filename": "11_plot_random_samples_Channel_D.html"
-        },
-        {
           "id": "12_pulse_duration_histogram",
           "filename": "12_pulse_duration_histogram.html"
-        },
-        {
-          "id": "16_multipulse_visualizer",
-          "filename": "16_multipulse_visualizer.html"
         },
         {
           "id": "16_plot_pulse_rates",
@@ -274,14 +238,14 @@
       "plots": [],
       "state": "unavailable",
       "panel_errors": {
-        "C": "missing_data"
+        "C": "empty_data"
       }
     },
     "A-B-C": {
       "plots": [],
       "state": "unavailable",
       "panel_errors": {
-        "C": "missing_data"
+        "C": "empty_data"
       }
     },
     "A-B-D": {
@@ -301,14 +265,6 @@
         {
           "id": "11_plot_random_samples_Channel_A",
           "filename": "11_plot_random_samples_Channel_A.html"
-        },
-        {
-          "id": "11_plot_random_samples_Channel_B",
-          "filename": "11_plot_random_samples_Channel_B.html"
-        },
-        {
-          "id": "11_plot_random_samples_Channel_D",
-          "filename": "11_plot_random_samples_Channel_D.html"
         },
         {
           "id": "12_pulse_duration_histogram",
@@ -333,25 +289,25 @@
       "plots": [],
       "state": "unavailable",
       "panel_errors": {
-        "C": "missing_data"
+        "C": "empty_data"
       }
     },
     "B-C-D": {
       "plots": [],
       "state": "unavailable",
       "panel_errors": {
-        "C": "missing_data"
+        "C": "empty_data"
       }
     },
     "A-B-C-D": {
       "plots": [],
       "state": "unavailable",
       "panel_errors": {
-        "C": "missing_data"
+        "C": "empty_data"
       }
     }
   },
   "panel_errors": {
-    "C": "missing_data"
+    "C": "empty_data"
   }
 }
