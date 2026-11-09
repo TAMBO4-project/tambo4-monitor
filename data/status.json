@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "observed_dataset": "261102_154751",
-  "latest_analyzed": "261102_154627",
+  "observed_dataset": "261109_113205",
+  "latest_analyzed": "261102_154751",
   "panels": {
     "A": {
       "status": "Error",
       "detail": "empty_data"
     },
     "B": {
-      "status": "Waiting",
-      "detail": "awaiting_data"
+      "status": "Error",
+      "detail": "empty_data"
     },
     "C": {
-      "status": "Waiting",
-      "detail": "awaiting_data"
+      "status": "Error",
+      "detail": "empty_data"
     },
     "D": {
       "status": "Error",
@@ -22,5 +22,5 @@
   },
   "completion_rule": "next_directory",
   "timezone": "America/Lima",
-  "updated_at": "2026-11-02T20:58:24+00:00"
+  "updated_at": "2026-11-09T16:33:04+00:00"
 }
