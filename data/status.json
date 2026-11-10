@@ -1,26 +1,26 @@
 {
   "version": 1,
-  "observed_dataset": "261109_203406",
+  "observed_dataset": "261109_210406",
   "latest_analyzed": "261109_200406",
   "panels": {
     "A": {
-      "status": "Running",
-      "detail": "receiving_data"
+      "status": "Error",
+      "detail": "analysis_failed"
     },
     "B": {
-      "status": "Running",
-      "detail": "receiving_data"
+      "status": "Error",
+      "detail": "analysis_failed"
     },
     "C": {
-      "status": "Running",
-      "detail": "receiving_data"
+      "status": "Error",
+      "detail": "analysis_failed"
     },
     "D": {
-      "status": "Running",
-      "detail": "receiving_data"
+      "status": "Error",
+      "detail": "analysis_failed"
     }
   },
   "completion_rule": "next_directory",
   "timezone": "America/Lima",
-  "updated_at": "2026-11-10T01:58:18+00:00"
+  "updated_at": "2026-11-10T02:04:59+00:00"
 }
