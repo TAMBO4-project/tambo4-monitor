@@ -16,11 +16,11 @@
       "detail": "receiving_data"
     },
     "D": {
-      "status": "Waiting",
-      "detail": "awaiting_data"
+      "status": "Running",
+      "detail": "receiving_data"
     }
   },
   "completion_rule": "next_directory",
   "timezone": "America/Lima",
-  "updated_at": "2026-11-10T09:47:55+00:00"
+  "updated_at": "2026-11-10T09:58:39+00:00"
 }
