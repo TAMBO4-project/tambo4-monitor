@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "date": "2026-11-13",
+  "chunks": [
+    {
+      "id": "261113_124856",
+      "timestamp": "2026-11-13T12:48:56-05:00",
+      "analyzed_at": "2026-11-13T18:00:02+00:00",
+      "manifest": "data/plots/261113_124856/manifest.json",
+      "storage": "current",
+      "commit": null,
+      "panels": [
+        "B"
+      ],
+      "summary": false,
+      "format_version": 1
+    }
+  ]
+}

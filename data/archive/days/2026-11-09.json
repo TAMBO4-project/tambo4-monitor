@@ -1,0 +1,2292 @@
+{
+  "version": 1,
+  "date": "2026-11-09",
+  "chunks": [
+    {
+      "id": "261109_233406",
+      "timestamp": "2026-11-09T23:34:06-05:00",
+      "analyzed_at": "2026-11-10T05:07:04+00:00",
+      "manifest": "data/plots/261109_233406/manifest.json",
+      "storage": "git-history",
+      "commit": "4b6348d976f685a685fbfcf81d92b392c29ff8d5",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_230406",
+      "timestamp": "2026-11-09T23:04:06-05:00",
+      "analyzed_at": "2026-11-10T04:36:41+00:00",
+      "manifest": "data/plots/261109_230406/manifest.json",
+      "storage": "git-history",
+      "commit": "dd4bc8edd21e1b46042d9db35bc7cce26edb20ae",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_223406",
+      "timestamp": "2026-11-09T22:34:06-05:00",
+      "analyzed_at": "2026-11-10T04:05:07+00:00",
+      "manifest": "data/plots/261109_223406/manifest.json",
+      "storage": "git-history",
+      "commit": "182a0dbe737803882a8aa25c450694def3f954ef",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_220406",
+      "timestamp": "2026-11-09T22:04:06-05:00",
+      "analyzed_at": "2026-11-10T03:36:53+00:00",
+      "manifest": "data/plots/261109_220406/manifest.json",
+      "storage": "git-history",
+      "commit": "ceedcc6ce617536fe88c93d7dc44e4c3c9ac319f",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_213406",
+      "timestamp": "2026-11-09T21:34:06-05:00",
+      "analyzed_at": "2026-11-10T03:07:09+00:00",
+      "manifest": "data/plots/261109_213406/manifest.json",
+      "storage": "git-history",
+      "commit": "dc98738eabdde321ed99ff23e1dede18fd169357",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_210406",
+      "timestamp": "2026-11-09T21:04:06-05:00",
+      "analyzed_at": "2026-11-10T02:36:47+00:00",
+      "manifest": "data/plots/261109_210406/manifest.json",
+      "storage": "git-history",
+      "commit": "383465612a294a6331a937bbfaa68e0fdc88cf0e",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_203406",
+      "timestamp": "2026-11-09T20:34:06-05:00",
+      "analyzed_at": "2026-11-10T02:06:48+00:00",
+      "manifest": "data/plots/261109_203406/manifest.json",
+      "storage": "git-history",
+      "commit": "2533a2301b8c9bac9be9246c2ed24d79fdcd3512",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_200406",
+      "timestamp": "2026-11-09T20:04:06-05:00",
+      "analyzed_at": "2026-11-10T01:36:57+00:00",
+      "manifest": "data/plots/261109_200406/manifest.json",
+      "storage": "git-history",
+      "commit": "6881905d5e577f8a9ed11ec9ce696f36f4bca310",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_193406",
+      "timestamp": "2026-11-09T19:34:06-05:00",
+      "analyzed_at": "2026-11-10T01:06:41+00:00",
+      "manifest": "data/plots/261109_193406/manifest.json",
+      "storage": "git-history",
+      "commit": "6d03663ec50230db85deb5310ec078ee677ca7ce",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_190406",
+      "timestamp": "2026-11-09T19:04:06-05:00",
+      "analyzed_at": "2026-11-10T00:36:49+00:00",
+      "manifest": "data/plots/261109_190406/manifest.json",
+      "storage": "git-history",
+      "commit": "ade43fb898929e142b15030adf4f11dbe3ce4718",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_183406",
+      "timestamp": "2026-11-09T18:34:06-05:00",
+      "analyzed_at": "2026-11-10T00:06:54+00:00",
+      "manifest": "data/plots/261109_183406/manifest.json",
+      "storage": "git-history",
+      "commit": "4120edace9e10420146137f0b1d68d4389968931",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_180406",
+      "timestamp": "2026-11-09T18:04:06-05:00",
+      "analyzed_at": "2026-11-09T23:37:03+00:00",
+      "manifest": "data/plots/261109_180406/manifest.json",
+      "storage": "git-history",
+      "commit": "5b2eee5f724307aa8debe227c2a7837f018a8124",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_173406",
+      "timestamp": "2026-11-09T17:34:06-05:00",
+      "analyzed_at": "2026-11-09T23:06:58+00:00",
+      "manifest": "data/plots/261109_173406/manifest.json",
+      "storage": "git-history",
+      "commit": "1c5c4d7cf58194d7d358cca447ecd60753200ae6",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_170406",
+      "timestamp": "2026-11-09T17:04:06-05:00",
+      "analyzed_at": "2026-11-09T22:35:07+00:00",
+      "manifest": "data/plots/261109_170406/manifest.json",
+      "storage": "git-history",
+      "commit": "0c6efcc518b1780d873be7ab00ab954b1141694d",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_163406",
+      "timestamp": "2026-11-09T16:34:06-05:00",
+      "analyzed_at": "2026-11-09T22:05:06+00:00",
+      "manifest": "data/plots/261109_163406/manifest.json",
+      "storage": "git-history",
+      "commit": "8815a99fce943db0b34b007adbe5f304f32e8abb",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_160406",
+      "timestamp": "2026-11-09T16:04:06-05:00",
+      "analyzed_at": "2026-11-09T21:36:56+00:00",
+      "manifest": "data/plots/261109_160406/manifest.json",
+      "storage": "git-history",
+      "commit": "46ba2f23a15ac727431bac9019b3b4c7ca40df09",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_153406",
+      "timestamp": "2026-11-09T15:34:06-05:00",
+      "analyzed_at": "2026-11-09T21:06:51+00:00",
+      "manifest": "data/plots/261109_153406/manifest.json",
+      "storage": "git-history",
+      "commit": "7a269a79eb7674b3d7ae4f63ecf349d0d35fbfec",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_152454",
+      "timestamp": "2026-11-09T15:24:54-05:00",
+      "analyzed_at": "2026-11-09T20:43:57+00:00",
+      "manifest": "data/plots/261109_152454/manifest.json",
+      "storage": "git-history",
+      "commit": "52ae183f6f5560b5425b50679c5a92f763c16ef3",
+      "panels": [
+        "A"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_152154",
+      "timestamp": "2026-11-09T15:21:54-05:00",
+      "analyzed_at": "2026-11-09T20:43:25+00:00",
+      "manifest": "data/plots/261109_152154/manifest.json",
+      "storage": "git-history",
+      "commit": "d31c9ce76c23d57256faae914d0a583eb30e46af",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_151625",
+      "timestamp": "2026-11-09T15:16:25-05:00",
+      "analyzed_at": "2026-11-09T20:42:35+00:00",
+      "manifest": "data/plots/261109_151625/manifest.json",
+      "storage": "git-history",
+      "commit": "5ee004b565d915efcb2c2fc7647317120ce7feb1",
+      "panels": [
+        "A"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_151434",
+      "timestamp": "2026-11-09T15:14:34-05:00",
+      "analyzed_at": "2026-11-09T20:42:13+00:00",
+      "manifest": "data/plots/261109_151434/manifest.json",
+      "storage": "git-history",
+      "commit": "f3c4296835b09a924fd77528451d0c7109864b50",
+      "panels": [
+        "A",
+        "C",
+        "A-C"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_151134",
+      "timestamp": "2026-11-09T15:11:34-05:00",
+      "analyzed_at": "2026-11-09T20:41:38+00:00",
+      "manifest": "data/plots/261109_151134/manifest.json",
+      "storage": "git-history",
+      "commit": "b6d4eb1217aad7edd59ae6abc5ce2c56a34f73bb",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_150834",
+      "timestamp": "2026-11-09T15:08:34-05:00",
+      "analyzed_at": "2026-11-09T20:40:56+00:00",
+      "manifest": "data/plots/261109_150834/manifest.json",
+      "storage": "git-history",
+      "commit": "b7ff29b856d6e3312a5603dfd55450b5de1db523",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_150534",
+      "timestamp": "2026-11-09T15:05:34-05:00",
+      "analyzed_at": "2026-11-09T20:40:03+00:00",
+      "manifest": "data/plots/261109_150534/manifest.json",
+      "storage": "git-history",
+      "commit": "2ae3976d61fbb8daba44e4a25f41456f6c16171a",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_150234",
+      "timestamp": "2026-11-09T15:02:34-05:00",
+      "analyzed_at": "2026-11-09T20:39:35+00:00",
+      "manifest": "data/plots/261109_150234/manifest.json",
+      "storage": "git-history",
+      "commit": "358f9e15c0cd1b50f9bb934de734014e9e03b893",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_145934",
+      "timestamp": "2026-11-09T14:59:34-05:00",
+      "analyzed_at": "2026-11-09T20:39:13+00:00",
+      "manifest": "data/plots/261109_145934/manifest.json",
+      "storage": "git-history",
+      "commit": "74ed8822fefceee1a3edd8f6f57200943984821b",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_145634",
+      "timestamp": "2026-11-09T14:56:34-05:00",
+      "analyzed_at": "2026-11-09T20:38:53+00:00",
+      "manifest": "data/plots/261109_145634/manifest.json",
+      "storage": "git-history",
+      "commit": "455a13eda0a603222745b4a53c727db253175669",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_145334",
+      "timestamp": "2026-11-09T14:53:34-05:00",
+      "analyzed_at": "2026-11-09T20:38:32+00:00",
+      "manifest": "data/plots/261109_145334/manifest.json",
+      "storage": "git-history",
+      "commit": "9d80b6dcdf74d09bba00f9845cc9bef26c64089f",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_145034",
+      "timestamp": "2026-11-09T14:50:34-05:00",
+      "analyzed_at": "2026-11-09T20:38:11+00:00",
+      "manifest": "data/plots/261109_145034/manifest.json",
+      "storage": "git-history",
+      "commit": "f82e5b7f82416e64a58ebeab09cf7edf8c1f2a59",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_144734",
+      "timestamp": "2026-11-09T14:47:34-05:00",
+      "analyzed_at": "2026-11-09T20:37:48+00:00",
+      "manifest": "data/plots/261109_144734/manifest.json",
+      "storage": "git-history",
+      "commit": "e1a6136db068f37a2918235f8c1846b032e2885b",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_144434",
+      "timestamp": "2026-11-09T14:44:34-05:00",
+      "analyzed_at": "2026-11-09T20:37:27+00:00",
+      "manifest": "data/plots/261109_144434/manifest.json",
+      "storage": "git-history",
+      "commit": "0189d0c14a9a0f36dd45b5b73ef5eb06d84b35f7",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_144134",
+      "timestamp": "2026-11-09T14:41:34-05:00",
+      "analyzed_at": "2026-11-09T20:37:06+00:00",
+      "manifest": "data/plots/261109_144134/manifest.json",
+      "storage": "git-history",
+      "commit": "2e6c34d0e13d49f22280429f17fd029ebfe30cc9",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_143834",
+      "timestamp": "2026-11-09T14:38:34-05:00",
+      "analyzed_at": "2026-11-09T20:36:47+00:00",
+      "manifest": "data/plots/261109_143834/manifest.json",
+      "storage": "git-history",
+      "commit": "b6e57d9e8c05d3f144aa2f062a084d30dbdef22d",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_143534",
+      "timestamp": "2026-11-09T14:35:34-05:00",
+      "analyzed_at": "2026-11-09T20:36:27+00:00",
+      "manifest": "data/plots/261109_143534/manifest.json",
+      "storage": "git-history",
+      "commit": "65d7f8a53b69a9347b12ba33ee4275febf83b394",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_143234",
+      "timestamp": "2026-11-09T14:32:34-05:00",
+      "analyzed_at": "2026-11-09T20:36:06+00:00",
+      "manifest": "data/plots/261109_143234/manifest.json",
+      "storage": "git-history",
+      "commit": "5104445db75cfbed8161968d9a8fc81fd03d84fe",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_142934",
+      "timestamp": "2026-11-09T14:29:34-05:00",
+      "analyzed_at": "2026-11-09T20:35:46+00:00",
+      "manifest": "data/plots/261109_142934/manifest.json",
+      "storage": "git-history",
+      "commit": "a723711367e8856738abffca9ad92163b9d764de",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_142634",
+      "timestamp": "2026-11-09T14:26:34-05:00",
+      "analyzed_at": "2026-11-09T20:35:25+00:00",
+      "manifest": "data/plots/261109_142634/manifest.json",
+      "storage": "git-history",
+      "commit": "7fc29d299a70efbb279dce52d1ff9473a398b821",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_142334",
+      "timestamp": "2026-11-09T14:23:34-05:00",
+      "analyzed_at": "2026-11-09T20:35:03+00:00",
+      "manifest": "data/plots/261109_142334/manifest.json",
+      "storage": "git-history",
+      "commit": "d94c08302d01952a2fa68e8ffa1bf6116c9e9986",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_142034",
+      "timestamp": "2026-11-09T14:20:34-05:00",
+      "analyzed_at": "2026-11-09T20:34:40+00:00",
+      "manifest": "data/plots/261109_142034/manifest.json",
+      "storage": "git-history",
+      "commit": "a425d1eb3332ba0e50037b2d5d218e0b7cc094fa",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_141734",
+      "timestamp": "2026-11-09T14:17:34-05:00",
+      "analyzed_at": "2026-11-09T20:26:18+00:00",
+      "manifest": "data/plots/261109_141734/manifest.json",
+      "storage": "git-history",
+      "commit": "c249539e8498db19c23f5b4d1d2e7d0bca174eca",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_141434",
+      "timestamp": "2026-11-09T14:14:34-05:00",
+      "analyzed_at": "2026-11-09T20:25:52+00:00",
+      "manifest": "data/plots/261109_141434/manifest.json",
+      "storage": "git-history",
+      "commit": "8786f5ea8095cf61ebade8d6e3357d5767386d67",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_141134",
+      "timestamp": "2026-11-09T14:11:34-05:00",
+      "analyzed_at": "2026-11-09T20:25:15+00:00",
+      "manifest": "data/plots/261109_141134/manifest.json",
+      "storage": "git-history",
+      "commit": "caf8a3812a95e6d924d6bfd7234d2599a2953660",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_140834",
+      "timestamp": "2026-11-09T14:08:34-05:00",
+      "analyzed_at": "2026-11-09T20:24:20+00:00",
+      "manifest": "data/plots/261109_140834/manifest.json",
+      "storage": "git-history",
+      "commit": "bd5e5277c8e6da85e519a4c17cdb599f7829de06",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_140534",
+      "timestamp": "2026-11-09T14:05:34-05:00",
+      "analyzed_at": "2026-11-09T20:23:37+00:00",
+      "manifest": "data/plots/261109_140534/manifest.json",
+      "storage": "git-history",
+      "commit": "51a5651a8da0df371c10cb5c5177f22ad054eb04",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_140234",
+      "timestamp": "2026-11-09T14:02:34-05:00",
+      "analyzed_at": "2026-11-09T20:23:09+00:00",
+      "manifest": "data/plots/261109_140234/manifest.json",
+      "storage": "git-history",
+      "commit": "536607c5406c7db90dd3e45b027405186521e3c2",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_135934",
+      "timestamp": "2026-11-09T13:59:34-05:00",
+      "analyzed_at": "2026-11-09T20:22:40+00:00",
+      "manifest": "data/plots/261109_135934/manifest.json",
+      "storage": "git-history",
+      "commit": "e048dbaa684b535b7d316cca4533dcd6a8b6a194",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_135634",
+      "timestamp": "2026-11-09T13:56:34-05:00",
+      "analyzed_at": "2026-11-09T20:22:09+00:00",
+      "manifest": "data/plots/261109_135634/manifest.json",
+      "storage": "git-history",
+      "commit": "255ca768f6e7e2ab60866379fa49f339871ccde7",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_135334",
+      "timestamp": "2026-11-09T13:53:34-05:00",
+      "analyzed_at": "2026-11-09T20:21:43+00:00",
+      "manifest": "data/plots/261109_135334/manifest.json",
+      "storage": "git-history",
+      "commit": "ec35a4691f0e5ac0fe178502743de227249a2eed",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_135034",
+      "timestamp": "2026-11-09T13:50:34-05:00",
+      "analyzed_at": "2026-11-09T20:21:16+00:00",
+      "manifest": "data/plots/261109_135034/manifest.json",
+      "storage": "git-history",
+      "commit": "6c46213e6c42671924099253e8a38a1c933e441a",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_134734",
+      "timestamp": "2026-11-09T13:47:34-05:00",
+      "analyzed_at": "2026-11-09T20:20:49+00:00",
+      "manifest": "data/plots/261109_134734/manifest.json",
+      "storage": "git-history",
+      "commit": "fe90f2e2eb209f786d71ce4b5c5436f1cd19320a",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_134434",
+      "timestamp": "2026-11-09T13:44:34-05:00",
+      "analyzed_at": "2026-11-09T20:20:18+00:00",
+      "manifest": "data/plots/261109_134434/manifest.json",
+      "storage": "git-history",
+      "commit": "29b43edb3dcf402a38d01d3fc6022aa112c3579b",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_134134",
+      "timestamp": "2026-11-09T13:41:34-05:00",
+      "analyzed_at": "2026-11-09T20:19:29+00:00",
+      "manifest": "data/plots/261109_134134/manifest.json",
+      "storage": "git-history",
+      "commit": "171cb057afbdedff6361feda77a6e46d55de32b2",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_133834",
+      "timestamp": "2026-11-09T13:38:34-05:00",
+      "analyzed_at": "2026-11-09T20:18:08+00:00",
+      "manifest": "data/plots/261109_133834/manifest.json",
+      "storage": "git-history",
+      "commit": "72837546b43812103dfcd55c927c5f14d3ae8179",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_133534",
+      "timestamp": "2026-11-09T13:35:34-05:00",
+      "analyzed_at": "2026-11-09T20:17:25+00:00",
+      "manifest": "data/plots/261109_133534/manifest.json",
+      "storage": "git-history",
+      "commit": "c4379c3778d9547dacbe812fd7a6b98b54f954b1",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_133234",
+      "timestamp": "2026-11-09T13:32:34-05:00",
+      "analyzed_at": "2026-11-09T20:16:43+00:00",
+      "manifest": "data/plots/261109_133234/manifest.json",
+      "storage": "git-history",
+      "commit": "149c832d638468d7b2a141e31c557ce622558620",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_132642",
+      "timestamp": "2026-11-09T13:26:42-05:00",
+      "analyzed_at": "2026-11-09T18:32:41+00:00",
+      "manifest": "data/plots/261109_132642/manifest.json",
+      "storage": "git-history",
+      "commit": "fcb53a2a48da21ec1aaf0a73494328ebae117b93",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_132342",
+      "timestamp": "2026-11-09T13:23:42-05:00",
+      "analyzed_at": "2026-11-09T18:32:20+00:00",
+      "manifest": "data/plots/261109_132342/manifest.json",
+      "storage": "git-history",
+      "commit": "5c182f0585b951bdae90fa25ee597d5a54ace379",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_132042",
+      "timestamp": "2026-11-09T13:20:42-05:00",
+      "analyzed_at": "2026-11-09T18:23:54+00:00",
+      "manifest": "data/plots/261109_132042/manifest.json",
+      "storage": "git-history",
+      "commit": "fcc8e70c3c3aa35981f34073eef861efdd172a14",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_131742",
+      "timestamp": "2026-11-09T13:17:42-05:00",
+      "analyzed_at": "2026-11-09T18:20:55+00:00",
+      "manifest": "data/plots/261109_131742/manifest.json",
+      "storage": "git-history",
+      "commit": "4ea4849f88533f8effafc87211aec803ae406883",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_131442",
+      "timestamp": "2026-11-09T13:14:42-05:00",
+      "analyzed_at": "2026-11-09T18:17:56+00:00",
+      "manifest": "data/plots/261109_131442/manifest.json",
+      "storage": "git-history",
+      "commit": "2e1b3e7d14a109f131e65eb56ab05c8996d7c2ba",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_131142",
+      "timestamp": "2026-11-09T13:11:42-05:00",
+      "analyzed_at": "2026-11-09T18:14:56+00:00",
+      "manifest": "data/plots/261109_131142/manifest.json",
+      "storage": "git-history",
+      "commit": "6d8aad949acdb6ff3244278740bd3441bec343ff",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_130842",
+      "timestamp": "2026-11-09T13:08:42-05:00",
+      "analyzed_at": "2026-11-09T18:11:54+00:00",
+      "manifest": "data/plots/261109_130842/manifest.json",
+      "storage": "git-history",
+      "commit": "4716552d669e568d62df71e7ba9ca54550291eb3",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_130542",
+      "timestamp": "2026-11-09T13:05:42-05:00",
+      "analyzed_at": "2026-11-09T18:08:54+00:00",
+      "manifest": "data/plots/261109_130542/manifest.json",
+      "storage": "git-history",
+      "commit": "e100992351f2c352df50565fabf2a8c43527022b",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_130242",
+      "timestamp": "2026-11-09T13:02:42-05:00",
+      "analyzed_at": "2026-11-09T18:05:55+00:00",
+      "manifest": "data/plots/261109_130242/manifest.json",
+      "storage": "git-history",
+      "commit": "4a944e8129d4a9f0d6dd7167d348e64ec54a6496",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_125942",
+      "timestamp": "2026-11-09T12:59:42-05:00",
+      "analyzed_at": "2026-11-09T18:02:56+00:00",
+      "manifest": "data/plots/261109_125942/manifest.json",
+      "storage": "git-history",
+      "commit": "88392f52aca00b6da87ecca8aeb456a612bfa5dc",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_125642",
+      "timestamp": "2026-11-09T12:56:42-05:00",
+      "analyzed_at": "2026-11-09T18:00:08+00:00",
+      "manifest": "data/plots/261109_125642/manifest.json",
+      "storage": "git-history",
+      "commit": "717e5ee496c589748d0ab501c78d09cce18b33da",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_125342",
+      "timestamp": "2026-11-09T12:53:42-05:00",
+      "analyzed_at": "2026-11-09T17:57:31+00:00",
+      "manifest": "data/plots/261109_125342/manifest.json",
+      "storage": "git-history",
+      "commit": "7d3ce013ce759d2f6543b1d7d1b9f848883a17cf",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_125042",
+      "timestamp": "2026-11-09T12:50:42-05:00",
+      "analyzed_at": "2026-11-09T17:54:08+00:00",
+      "manifest": "data/plots/261109_125042/manifest.json",
+      "storage": "git-history",
+      "commit": "0f15faea7a215d8c26dfbdbaaa46c04923b03850",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_124742",
+      "timestamp": "2026-11-09T12:47:42-05:00",
+      "analyzed_at": "2026-11-09T17:51:12+00:00",
+      "manifest": "data/plots/261109_124742/manifest.json",
+      "storage": "git-history",
+      "commit": "ea5f8386e893ad052dda2a188864a1191f2f1c73",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_124442",
+      "timestamp": "2026-11-09T12:44:42-05:00",
+      "analyzed_at": "2026-11-09T17:48:29+00:00",
+      "manifest": "data/plots/261109_124442/manifest.json",
+      "storage": "git-history",
+      "commit": "fcd75ddfa6421aafda1ee94d6a2deb83364aa99d",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_124142",
+      "timestamp": "2026-11-09T12:41:42-05:00",
+      "analyzed_at": "2026-11-09T17:45:25+00:00",
+      "manifest": "data/plots/261109_124142/manifest.json",
+      "storage": "git-history",
+      "commit": "32b1ca5123c7ab47d3b4aff14cfd9c9236c76d0a",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_123842",
+      "timestamp": "2026-11-09T12:38:42-05:00",
+      "analyzed_at": "2026-11-09T17:42:38+00:00",
+      "manifest": "data/plots/261109_123842/manifest.json",
+      "storage": "git-history",
+      "commit": "ed362df686b3237f48022a813ed32f92fb083221",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_123542",
+      "timestamp": "2026-11-09T12:35:42-05:00",
+      "analyzed_at": "2026-11-09T17:39:20+00:00",
+      "manifest": "data/plots/261109_123542/manifest.json",
+      "storage": "git-history",
+      "commit": "d4c9872b4770d8f27af4afde88176382ef7c41a3",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_123242",
+      "timestamp": "2026-11-09T12:32:42-05:00",
+      "analyzed_at": "2026-11-09T17:35:56+00:00",
+      "manifest": "data/plots/261109_123242/manifest.json",
+      "storage": "git-history",
+      "commit": "57d99eb5f316d358a8e5920fb675bca48dec4c57",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_122942",
+      "timestamp": "2026-11-09T12:29:42-05:00",
+      "analyzed_at": "2026-11-09T17:32:47+00:00",
+      "manifest": "data/plots/261109_122942/manifest.json",
+      "storage": "git-history",
+      "commit": "7e0c25077393e667d79a886b100758d1ea52256c",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_122642",
+      "timestamp": "2026-11-09T12:26:42-05:00",
+      "analyzed_at": "2026-11-09T17:29:48+00:00",
+      "manifest": "data/plots/261109_122642/manifest.json",
+      "storage": "git-history",
+      "commit": "31bcf30a08dc5067e8b212d51f0a547ebbf8b971",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_122342",
+      "timestamp": "2026-11-09T12:23:42-05:00",
+      "analyzed_at": "2026-11-09T17:26:59+00:00",
+      "manifest": "data/plots/261109_122342/manifest.json",
+      "storage": "git-history",
+      "commit": "abbcbf30e8be36cb4070f86f49d4c452adf3f55c",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_122042",
+      "timestamp": "2026-11-09T12:20:42-05:00",
+      "analyzed_at": "2026-11-09T17:23:54+00:00",
+      "manifest": "data/plots/261109_122042/manifest.json",
+      "storage": "git-history",
+      "commit": "9cafeec5657e873c637428f3ed81b54f6c5e207e",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_121742",
+      "timestamp": "2026-11-09T12:17:42-05:00",
+      "analyzed_at": "2026-11-09T17:20:56+00:00",
+      "manifest": "data/plots/261109_121742/manifest.json",
+      "storage": "git-history",
+      "commit": "c1c9b7c8c9d9081dbce065c56484b42c7a0a8333",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_121442",
+      "timestamp": "2026-11-09T12:14:42-05:00",
+      "analyzed_at": "2026-11-09T17:17:55+00:00",
+      "manifest": "data/plots/261109_121442/manifest.json",
+      "storage": "git-history",
+      "commit": "521edaa03e6bc5f3d1dfe5c2ea981e05798af73b",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_120508",
+      "timestamp": "2026-11-09T12:05:08-05:00",
+      "analyzed_at": "2026-11-09T17:14:55+00:00",
+      "manifest": "data/plots/261109_120508/manifest.json",
+      "storage": "git-history",
+      "commit": "9ebdbac16166f3ddf9d0ccdfd6b1f9badfffed2d",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_120308",
+      "timestamp": "2026-11-09T12:03:08-05:00",
+      "analyzed_at": "2026-11-09T17:05:15+00:00",
+      "manifest": "data/plots/261109_120308/manifest.json",
+      "storage": "git-history",
+      "commit": "5724b83d98e43a089a45dcfb883818499cc40ffd",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_120033",
+      "timestamp": "2026-11-09T12:00:33-05:00",
+      "analyzed_at": "2026-11-09T17:02:39+00:00",
+      "manifest": "data/plots/261109_120033/manifest.json",
+      "storage": "git-history",
+      "commit": "6ea415c3758555b4020bdbdd5d626f00cf7a15c9",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_115833",
+      "timestamp": "2026-11-09T11:58:33-05:00",
+      "analyzed_at": "2026-11-09T17:00:46+00:00",
+      "manifest": "data/plots/261109_115833/manifest.json",
+      "storage": "git-history",
+      "commit": "dfc7d1af7070a85f660b18c43b88fbb3dbe363c4",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_115633",
+      "timestamp": "2026-11-09T11:56:33-05:00",
+      "analyzed_at": "2026-11-09T16:58:45+00:00",
+      "manifest": "data/plots/261109_115633/manifest.json",
+      "storage": "git-history",
+      "commit": "3228357c878a6fd9fa60ed198b8f1da2ed41b770",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_115253",
+      "timestamp": "2026-11-09T11:52:53-05:00",
+      "analyzed_at": "2026-11-09T16:55:01+00:00",
+      "manifest": "data/plots/261109_115253/manifest.json",
+      "storage": "git-history",
+      "commit": "c5da84f2a0fb91ccc77ddc124b18f1c73ffcfd28",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_114912",
+      "timestamp": "2026-11-09T11:49:12-05:00",
+      "analyzed_at": "2026-11-09T16:53:00+00:00",
+      "manifest": "data/plots/261109_114912/manifest.json",
+      "storage": "git-history",
+      "commit": "aa7b11500dc1dfd4dc61e36966a302076d51d507",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_114612",
+      "timestamp": "2026-11-09T11:46:12-05:00",
+      "analyzed_at": "2026-11-09T16:49:23+00:00",
+      "manifest": "data/plots/261109_114612/manifest.json",
+      "storage": "git-history",
+      "commit": "34f9c66e21044ebfcad10d263a44b83d556872bf",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_114334",
+      "timestamp": "2026-11-09T11:43:34-05:00",
+      "analyzed_at": "2026-11-09T16:46:23+00:00",
+      "manifest": "data/plots/261109_114334/manifest.json",
+      "storage": "git-history",
+      "commit": "d5b94146b64ebf268c5671bc434604daaa95c406",
+      "panels": [
+        "A",
+        "C",
+        "D",
+        "A-C",
+        "A-D",
+        "C-D",
+        "A-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_114234",
+      "timestamp": "2026-11-09T11:42:34-05:00",
+      "analyzed_at": "2026-11-09T16:43:45+00:00",
+      "manifest": "data/plots/261109_114234/manifest.json",
+      "storage": "git-history",
+      "commit": "e96745634c08a96e56bc0ba9fe0a2b979224d658",
+      "panels": [
+        "A",
+        "C",
+        "D",
+        "A-C",
+        "A-D",
+        "C-D",
+        "A-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_113959",
+      "timestamp": "2026-11-09T11:39:59-05:00",
+      "analyzed_at": "2026-11-09T16:42:37+00:00",
+      "manifest": "data/plots/261109_113959/manifest.json",
+      "storage": "git-history",
+      "commit": "68047e90364a297f8ab8ac9d306c727af4f01b96",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_113929",
+      "timestamp": "2026-11-09T11:39:29-05:00",
+      "analyzed_at": "2026-11-09T16:40:10+00:00",
+      "manifest": "data/plots/261109_113929/manifest.json",
+      "storage": "git-history",
+      "commit": "73f3324cfe151daa5349ae95ecffda52d68cc9d7",
+      "panels": [
+        "A",
+        "B",
+        "D",
+        "A-B",
+        "A-D",
+        "B-D",
+        "A-B-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_113357",
+      "timestamp": "2026-11-09T11:33:57-05:00",
+      "analyzed_at": "2026-11-09T16:39:42+00:00",
+      "manifest": "data/plots/261109_113357/manifest.json",
+      "storage": "git-history",
+      "commit": "f2bd746a91c5524acd25261fbdfd701058d23b92",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_113327",
+      "timestamp": "2026-11-09T11:33:27-05:00",
+      "analyzed_at": "2026-11-09T16:34:02+00:00",
+      "manifest": "data/plots/261109_113327/manifest.json",
+      "storage": "git-history",
+      "commit": "4f9e89afd39a9fdd553c9ef25ba22c078c67203e",
+      "panels": [
+        "A"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_113205",
+      "timestamp": "2026-11-09T11:32:05-05:00",
+      "analyzed_at": "2026-11-09T16:33:37+00:00",
+      "manifest": "data/plots/261109_113205/manifest.json",
+      "storage": "git-history",
+      "commit": "4567bbce0bf276f8f28c15566335904a61077eef",
+      "panels": [
+        "A",
+        "D",
+        "A-D"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    },
+    {
+      "id": "261109_113135",
+      "timestamp": "2026-11-09T11:31:35-05:00",
+      "analyzed_at": "2026-11-09T16:33:12+00:00",
+      "manifest": "data/plots/261109_113135/manifest.json",
+      "storage": "git-history",
+      "commit": "059be8b650e774442d8d5bb5de2e8e649eead2de",
+      "panels": [
+        "A",
+        "B",
+        "A-B"
+      ],
+      "summary": false,
+      "format_version": 1,
+      "assets": {
+        "data/assets/plotly-3.1.0.min.js": "data/assets/plotly-3.1.0-122e3be346d66616944d0b83eaaf7242581508c3c1cfa0995a17af0d83eff770.min.js"
+      }
+    }
+  ]
+}

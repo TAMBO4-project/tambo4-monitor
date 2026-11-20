@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "date": "2026-11-12",
+  "chunks": [
+    {
+      "id": "261112_124857",
+      "timestamp": "2026-11-12T12:48:57-05:00",
+      "analyzed_at": "2026-11-13T17:59:31+00:00",
+      "manifest": "data/plots/261112_124857/manifest.json",
+      "storage": "current",
+      "commit": null,
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "A-B",
+        "A-C",
+        "A-D",
+        "B-C",
+        "B-D",
+        "C-D",
+        "A-B-C",
+        "A-B-D",
+        "A-C-D",
+        "B-C-D",
+        "A-B-C-D"
+      ],
+      "summary": false,
+      "format_version": 1
+    }
+  ]
+}
