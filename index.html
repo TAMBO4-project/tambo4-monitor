@@ -15,8 +15,8 @@
   </script>
   <title></title>
   <link rel="icon" href="assets/logo-placeholder.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=5">
-  <script src="app.js?v=5" defer></script>
+  <link rel="stylesheet" href="styles.css?v=7">
+  <script src="app.js?v=7" defer></script>
 </head>
 <body>
   <script>
@@ -43,7 +43,7 @@
         <span class="brand-caption" data-i18n="instrument"></span>
       </div>
       <section class="status-board card">
-        <div class="section-heading"><h2 data-i18n="channelStatus"></h2><span class="section-number">01</span></div>
+        <div class="section-heading"><h2 id="status-heading" data-i18n="channelStatus"></h2><span class="section-number">01</span></div>
         <div id="panel-status" class="status-grid"></div>
         <p class="muted status-note" id="status-note"></p>
       </section>
@@ -71,7 +71,14 @@
       <section class="viewer card">
         <div class="viewer-heading"><div><span class="eyebrow" data-i18n="analysisWorkspace"></span><h2 id="viewer-title"></h2></div><a id="open-plot" class="outline-button" target="_blank" rel="noopener" hidden><span data-i18n="openPlot"></span><span aria-hidden="true">↗</span></a></div>
         <div class="plot-controls"><button id="scroll-left" class="scroll-button" type="button" data-i18n-aria-label="scrollLeft">‹</button><div id="plot-tabs" class="plot-tabs" role="tablist" data-i18n-aria-label="plots"></div><button id="scroll-right" class="scroll-button" type="button" data-i18n-aria-label="scrollRight">›</button></div>
-        <div class="time-controls"><div class="time-tabs" role="tablist"><button id="latest-tab" type="button" role="tab" aria-selected="true" data-i18n="latest"></button><button id="history-tab" type="button" role="tab" aria-selected="false" aria-expanded="false" aria-controls="history-list" data-i18n="history"></button></div><span id="dataset-label" class="dataset-label"></span><div id="history-list" class="history-list" hidden></div></div>
+        <div class="time-controls"><div class="time-tabs" role="tablist"><button id="latest-tab" type="button" role="tab" aria-selected="true" data-i18n="latest"></button><button id="history-tab" type="button" role="tab" aria-selected="false" aria-expanded="false" aria-controls="history-list" data-i18n="lastDay"></button><button id="calendar-tab" type="button" role="tab" aria-selected="false" aria-controls="archive-controls" data-i18n="calendar"></button><button id="summary-toggle" type="button" aria-pressed="false" data-i18n="summaryView" hidden></button></div><span id="dataset-label" class="dataset-label"></span><div id="history-list" class="history-list" hidden></div></div>
+        <div id="archive-controls" class="archive-controls" hidden>
+          <label><span data-i18n="archiveDate"></span><input id="archive-date" type="date"></label>
+          <label><span data-i18n="archiveAvailable"></span><select id="archive-days"></select></label>
+          <label><span data-i18n="archiveChunk"></span><select id="archive-chunk"></select></label>
+          <label hidden><span data-i18n="archiveVersion"></span><select id="archive-version"></select></label>
+          <p id="archive-status" role="status"></p>
+        </div>
         <div class="plot-stage" id="plot-stage"><div id="plot-empty" class="plot-empty"><div class="empty-icon" aria-hidden="true">⌁</div><h3 id="empty-title"></h3><p id="empty-description"></p></div><iframe id="plot-frame" title="" sandbox="allow-scripts allow-downloads" hidden></iframe></div>
         <div class="viewer-footer"><span id="plot-caption"></span><span data-i18n="retention"></span></div>
       </section>

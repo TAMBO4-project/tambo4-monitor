@@ -1,6 +1,22 @@
 /* All dashboard UI copy lives here, including dynamic labels and accessibility text. */
 const i18n = {
 EN: {
+  archiveVersion: "Analysis version",
+  archiveAnalyzer: "TAMBO-4 Analyzer",
+  archiveLegacy: "Original Monitor",
+  lastDay: "Last 24h",
+  calendar: "Calendar",
+  archiveDate: "Measurement date (Lima)",
+  archiveAvailable: "Dates with data",
+  archiveChunk: "Choose a chunk",
+  archiveChoose: "Choose a measurement date",
+  archiveCount: "{count} chunks",
+  archiveEmpty: "No data for this date",
+  archiveInvalid: "Choose a valid past or current date",
+  archiveLoading: "Archive loading…",
+  archiveFailed: "Archive unavailable. Retry the selection.",
+  liveDetector: "Current detector status",
+  archiveMeasurement: "Archived measurement",
   title: "", pageTitle: "TAMBO-4 monitoring", subtitle: "Experiment monitoring",
   eyebrow: "TAMBO-4 MONITORING", instrument: "Four panels. One experiment.",
   channelStatus: "Channel status", temperature: "Temperature", setup: "TAMBO-4 setup",
@@ -35,7 +51,9 @@ EN: {
   useDarkMode: "Switch to dark mode", useLightMode: "Switch to light mode",
   language: "Language",
   running: "Running", waiting: "Waiting", error: "Error", availablePlots: "{count} available plots",
+  summaryView: "Summary", chunkMerged: "Chunk-wide coincidence plots", unprocessedSet: "This combination was not analyzed for this dataset.", staleStatus: "Last reported channel status · stale",
   plotNames: {
+    coincidence_totals: "Coincidence totals", coincidences_by_chunk: "Coincidences by chunk", adc_peak: "ADC peak", charge: "Charge", waveforms: "Waveforms", time_difference: "Time difference",
     "04_baseline_estimation": "Baseline", "05_plot_coincidences": "Coincident pulses",
     "08_adc_peak_histogram": "ADC peak", "09_charge_calculation": "Charge calculation",
     "10_charge_histogram": "Charge histogram", "10_charge_histogram_individual": "Individual charge",
@@ -51,6 +69,22 @@ EN: {
   }
 },
 KO: {
+  archiveVersion: "분석 버전",
+  archiveAnalyzer: "TAMBO-4 Analyzer",
+  archiveLegacy: "기존 모니터",
+  lastDay: "최근 24시간",
+  calendar: "달력",
+  archiveDate: "측정 날짜 (리마)",
+  archiveAvailable: "데이터가 있는 날짜",
+  archiveChunk: "청크 선택",
+  archiveChoose: "측정 날짜를 선택하세요",
+  archiveCount: "청크 {count}개",
+  archiveEmpty: "이 날짜에는 데이터가 없습니다",
+  archiveInvalid: "오늘 또는 과거의 올바른 날짜를 선택하세요",
+  archiveLoading: "아카이브 로딩 중…",
+  archiveFailed: "아카이브를 열 수 없습니다. 다시 선택하세요.",
+  liveDetector: "현재 검출기 상태",
+  archiveMeasurement: "과거 측정",
   title: "", pageTitle: "TAMBO-4 모니터링", subtitle: "실험 모니터링",
   eyebrow: "TAMBO-4 모니터링", instrument: "네 개의 패널. 하나의 실험.",
   channelStatus: "채널 상태", temperature: "온도", setup: "TAMBO-4 배치",
@@ -84,7 +118,9 @@ KO: {
   scrollRight: "그래프 탭을 오른쪽으로 이동", plotFrame: "패널 {panels}의 분석 그래프",
   useDarkMode: "다크 모드로 전환", useLightMode: "라이트 모드로 전환", language: "언어",
   running: "실행 중", waiting: "대기 중", error: "오류", availablePlots: "그래프 {count}개",
+  summaryView: "요약", chunkMerged: "청크 전체에서 계산한 coincidence 그래프", unprocessedSet: "이 데이터셋에서는 이 패널 조합을 분석하지 않았습니다.", staleStatus: "마지막 수신 상태 · 업데이트 지연",
   plotNames: {
+    coincidence_totals: "Coincidence 합계", coincidences_by_chunk: "청크별 coincidence", adc_peak: "ADC 피크", charge: "전하", waveforms: "파형", time_difference: "시간 차이",
     "04_baseline_estimation": "기저선", "05_plot_coincidences": "동시 검출 펄스",
     "08_adc_peak_histogram": "ADC 피크", "09_charge_calculation": "전하 계산",
     "10_charge_histogram": "전하 히스토그램", "10_charge_histogram_individual": "개별 전하",
@@ -100,6 +136,22 @@ KO: {
   }
 },
 ES: {
+  archiveVersion: "Versión del análisis",
+  archiveAnalyzer: "TAMBO-4 Analyzer",
+  archiveLegacy: "Monitor original",
+  lastDay: "Últimas 24 h",
+  calendar: "Calendario",
+  archiveDate: "Fecha de medición (Lima)",
+  archiveAvailable: "Fechas con datos",
+  archiveChunk: "Elegir bloque",
+  archiveChoose: "Elija una fecha de medición",
+  archiveCount: "{count} bloques",
+  archiveEmpty: "Sin datos para esta fecha",
+  archiveInvalid: "Elija una fecha válida de hoy o anterior",
+  archiveLoading: "Cargando archivo…",
+  archiveFailed: "Archivo no disponible. Vuelva a seleccionar.",
+  liveDetector: "Estado actual del detector",
+  archiveMeasurement: "Medición archivada",
   title: "", pageTitle: "Monitoreo TAMBO-4", subtitle: "Monitoreo del experimento",
   eyebrow: "MONITOREO TAMBO-4", instrument: "Cuatro paneles. Un experimento.",
   channelStatus: "Estado de los canales", temperature: "Temperatura", setup: "Disposición TAMBO-4",
@@ -133,7 +185,9 @@ ES: {
   scrollRight: "Desplazar las pestañas a la derecha", plotFrame: "Gráfico de análisis de los paneles {panels}",
   useDarkMode: "Cambiar al modo oscuro", useLightMode: "Cambiar al modo claro", language: "Idioma",
   running: "En ejecución", waiting: "En espera", error: "Error", availablePlots: "{count} gráficos disponibles",
+  summaryView: "Resumen", chunkMerged: "Gráficos de coincidencias de todo el bloque", unprocessedSet: "Esta combinación no se analizó para este conjunto de datos.", staleStatus: "Último estado recibido · sin actualizar",
   plotNames: {
+    coincidence_totals: "Total de coincidencias", coincidences_by_chunk: "Coincidencias por bloque", adc_peak: "Pico ADC", charge: "Carga", waveforms: "Formas de onda", time_difference: "Diferencia temporal",
     "04_baseline_estimation": "Línea de base", "05_plot_coincidences": "Pulsos coincidentes",
     "08_adc_peak_histogram": "Pico ADC", "09_charge_calculation": "Cálculo de carga",
     "10_charge_histogram": "Histograma de carga", "10_charge_histogram_individual": "Carga individual",
@@ -206,7 +260,7 @@ function applyLanguage(value, persist = true) {
   document.documentElement.dataset.language = language;
   $("language-select").value = language;
   translateUI();
-  renderSelection(); renderStatus(); renderHistory(); renderViewer(); renderConnection();
+  renderSelection(); renderStatus(); renderHistory(); renderCalendar(); renderViewer(); renderConnection();
   if (persist) {
     try { localStorage.setItem("language", language); } catch { /* Language still works without storage. */ }
   }
@@ -303,7 +357,8 @@ function themedPlotDocument(html, url) {
 }
 
 function currentDataset() {
-  return state.mode === "latest" ? state.history.datasets[0] : state.history.datasets.find(item => item.id === state.historyId);
+  if (state.mode === "calendar") return archive.manifest;
+  return state.mode === "latest" || !state.historyId ? state.history.datasets[0] : state.history.datasets.find(item => item.id === state.historyId);
 }
 function datasetStartTime(dataset) {
   // Directory names describe wall-clock time at the experiment, not the browser's timezone.
@@ -388,9 +443,19 @@ function initialize() {
     chip.addEventListener("click", () => togglePanel(panel));
     $("selection-chips").append(chip);
   });
-  $("select-all").addEventListener("click", () => { state.selected = new Set(state.selected.size === panels.length ? [] : panels); renderSelection(); renderViewer(); });
-  $("latest-tab").addEventListener("click", () => { state.mode = "latest"; state.historyId = null; showHistory(false); renderViewer(); });
-  $("history-tab").addEventListener("click", () => showHistory($("history-list").hidden));
+  $("select-all").addEventListener("click", () => { state.summaryView = false; state.selected = new Set(state.selected.size === panels.length ? [] : panels); renderSelection(); renderViewer(); });
+  $("latest-tab").addEventListener("click", () => { leaveCalendar("latest"); state.historyId = null; showHistory(false); renderViewer(); });
+  $("summary-toggle").addEventListener("click", () => { state.summaryView = !state.summaryView; renderViewer(); });
+  $("history-tab").addEventListener("click", () => {
+    leaveCalendar("history");
+    showHistory($("history-list").hidden);
+    renderViewer();
+  });
+  $("calendar-tab").addEventListener("click", openCalendar);
+  $("archive-date").addEventListener("change", event => loadArchiveDay(event.target.value));
+  $("archive-days").addEventListener("change", event => loadArchiveDay(event.target.value));
+  $("archive-version").addEventListener("change", event => chooseArchiveChunk(archive.entry.id, event.target.value));
+  $("archive-chunk").addEventListener("change", event => chooseArchiveChunk(event.target.value));
   $("scroll-left").addEventListener("click", () => $("plot-tabs").scrollBy({left:-240, behavior:"smooth"}));
   $("scroll-right").addEventListener("click", () => $("plot-tabs").scrollBy({left:240, behavior:"smooth"}));
   $("plot-tabs").addEventListener("scroll", updateScrollButtons);
@@ -426,7 +491,7 @@ function imageWithFallback(img, desired, fallback, alt, onFallback) {
   };
   probe.src = desired;
 }
-function togglePanel(panel) { state.selected.has(panel) ? state.selected.delete(panel) : state.selected.add(panel); renderSelection(); renderViewer(); }
+function togglePanel(panel) { state.summaryView = false; state.selected.has(panel) ? state.selected.delete(panel) : state.selected.add(panel); renderSelection(); renderViewer(); }
 function renderSelection() {
   document.querySelectorAll("[data-panel]").forEach(node => {
     node.setAttribute("aria-label", t("selectPanel", {panel:node.dataset.panel}));
@@ -449,6 +514,11 @@ function renderStatus() {
   });
   $("status-note").textContent = state.status?.observed_dataset ? t("statusObserved", {id:state.status.observed_dataset}) : I18N.statusWaiting;
   const updated = state.status?.updated_at ? new Date(state.status.updated_at) : null;
+  const statusNote = $("status-note");
+  $("status-heading").textContent = state.mode === "calendar" ? I18N.liveDetector : I18N.channelStatus;
+  if (updated && Number.isFinite(+updated) && Date.now() - (+updated) > 15 * 60 * 1000) {
+    statusNote.textContent = I18N.staleStatus;
+  }
   $("updated-at").textContent = updated && Number.isFinite(+updated) ? t("lastUpdated", {time:formatTime(updated, {month:"short", day:"2-digit", hour:"2-digit", minute:"2-digit", second:"2-digit"})}) : I18N.notPublished;
 }
 function plotLabel(id) {
@@ -477,22 +547,31 @@ function renderHistory() {
   }
 }
 function renderViewer() {
-  const key = selection();
-  $("plot-frame").title = t("plotFrame", {panels:key});
   const dataset = currentDataset();
+  const hasSummary = Boolean(dataset?.summary?.plots?.length);
+  const showingSummary = hasSummary && state.summaryView;
+  const key = showingSummary ? "summary" : selection();
+  const summaryToggle = $("summary-toggle");
+  summaryToggle.hidden = !hasSummary;
+  summaryToggle.setAttribute("aria-pressed", String(Boolean(showingSummary)));
+  $("plot-frame").title = t("plotFrame", {panels:showingSummary ? I18N.summaryView : key});
   renderTemperature(); // Keep the acquisition band synchronized even when no plot is available.
-  const set = dataset?.panel_sets?.[key];
+  const set = showingSummary ? dataset.summary : dataset?.panel_sets?.[key];
   const plots = (set?.plots || []).filter(plot => /^[\w.-]+\.html$/.test(plot.filename) && plot.id);
   // Preserve the exact plot across history changes. Fall back only on a panel change.
-  if (!state.plotId || state.lastPanelKey !== key) {
+  if (!state.plotId || state.lastPanelKey !== key || (state.mode === "calendar" && !plots.some(plot => plot.id === state.plotId))) {
     if (!plots.some(plot => plot.id === state.plotId)) state.plotId = plots[0]?.id || null;
   }
   state.lastPanelKey = key;
-  $("viewer-title").textContent = !key ? I18N.noSelection : t(state.selected.size === 1 ? "panel" : "panels", {panel:key, panels:key.replaceAll("-", " + ")});
+  $("viewer-title").textContent = showingSummary ? I18N.summaryView : !key ? I18N.noSelection : t(state.selected.size === 1 ? "panel" : "panels", {panel:key, panels:key.replaceAll("-", " + ")});
   $("latest-tab").setAttribute("aria-selected", String(state.mode === "latest"));
   $("history-tab").setAttribute("aria-selected", String(state.mode === "history"));
-  $("dataset-label").textContent = dataset ? stamp(dataset.id) : I18N.noDataset;
-  $("plot-caption").textContent = plots.length ? t("availablePlots", {count:plots.length}) : I18N.noPlots;
+  $("calendar-tab").setAttribute("aria-selected", String(state.mode === "calendar"));
+  $("dataset-label").textContent = dataset ? (state.mode === "calendar"
+    ? `${I18N.archiveMeasurement} · ${archive.entry.timestamp.slice(0, 16).replace("T", " ")} · ${dataset.id}`
+    : stamp(dataset.id)) : I18N.noDataset;
+  const caption = plots.length ? t("availablePlots", {count:plots.length}) : I18N.noPlots;
+  $("plot-caption").textContent = dataset?.analysis_source === "chunk-merged" ? `${caption} · ${I18N.chunkMerged}` : caption;
   const tabs = $("plot-tabs"); const oldScroll = tabs.scrollLeft; tabs.replaceChildren();
   for (const plot of plots) {
     const button = element("button", "plot-tab", plotLabel(plot.id));
@@ -510,14 +589,17 @@ function renderViewer() {
     else if (tabBounds.right > barBounds.right) tabs.scrollLeft += tabBounds.right - barBounds.right;
   }
   updateScrollButtons();
+  if (state.mode === "calendar" && !dataset) {
+    return emptyPlot(archive.message || "archiveChoose", archive.message || "archiveChoose");
+  }
   if (!key) return emptyPlot("noSelection", "noSelectionDescription");
   if (!dataset) return emptyPlot(state.mode === "history" ? "missingHistory" : "waitingTitle", state.mode === "history" ? "historyExpired" : "waitingDescription");
-  if (!set || set.state === "unavailable") return emptyPlot("noSetTitle", "noSetDescription");
+  if (!set || set.state === "unavailable") return emptyPlot("noSetTitle", set?.reason === "not_analyzed" ? "unprocessedSet" : "noSetDescription");
   const plot = plots.find(item => item.id === state.plotId);
   if (!plot) return emptyPlot("missingPlotTitle", "missingPlotDescription");
   if (!/^\d{6}_\d{6}$/.test(dataset.id)) return emptyPlot("failedTitle", "failedDescription");
   const url = `${CONFIG.dataRoot}plots/${dataset.id}/${key}/${encodeURIComponent(plot.filename)}`;
-  loadPlot(url, key);
+  loadPlot(url, key, state.mode === "calendar" ? {entry:archive.entry, dataset, filename:plot.filename} : null);
 }
 function updateScrollButtons() {
   const tabs = $("plot-tabs");
@@ -531,20 +613,66 @@ function emptyPlot(title, description) {
   $("open-plot").hidden = true; $("plot-empty").hidden = false;
   $("empty-title").textContent = I18N[title]; $("empty-description").textContent = I18N[description];
 }
-async function loadPlot(url, key) {
-  if (url === state.frameUrl) return;
+async function loadPlot(url, key, historical = null) {
+  const identity = historical ? `archive:${historical.entry.commit}:${url}` : url;
+  if (identity === state.frameUrl) return;
   emptyPlot("loadingTitle", "loadingDescription");
   const request = ++state.frameRequest;
   frameAbort = new AbortController();
   try {
-    const response = await fetch(url, {cache:"no-cache", signal:frameAbort.signal});
-    if (!response.ok) throw new Error(String(response.status));
-    const html = await response.text();
+    let html, source = url;
+    const signal = AbortSignal.any([frameAbort.signal, AbortSignal.timeout(15000)]);
+    if (historical) {
+      const loader = await import("./archive_loader.mjs");
+      const result = await loader.archivePlot(historical.entry, historical.dataset, key, historical.filename,
+        {signal, themedPlotDocument});
+      html = result.srcdoc;
+      source = result.url;
+    } else {
+      const response = await fetch(url, {cache:"no-cache", signal});
+      if (!response.ok) throw new Error(String(response.status));
+      html = themedPlotDocument(await response.text(), url);
+    }
     if (request !== state.frameRequest) return;
-    state.frameUrl = url;
-    const frame = $("plot-frame"); frame.title = t("plotFrame", {panels:key});
-    frame.srcdoc = themedPlotDocument(html, url); frame.hidden = false; $("plot-empty").hidden = true;
-    $("open-plot").href = url; $("open-plot").hidden = false;
+    state.frameUrl = identity;
+    const frame = $("plot-frame");
+    frame.title = t("plotFrame", {panels:key === "summary" ? I18N.summaryView : key});
+    frame.hidden = false;
+    if (historical) {
+      // A sandboxed iframe reports readiness without exposing its DOM to the dashboard.
+      const token = crypto.getRandomValues(new Uint32Array(4)).join("-");
+      const script = `<script>window.addEventListener("load", async () => {
+        for (let i = 0; i < 40; i++) {
+          if (window.Plotly && document.querySelector(".plotly-graph-div")?._fullLayout) {
+            parent.postMessage({archiveReady:${JSON.stringify(token)}}, "*");
+            return;
+          }
+          await new Promise(resolve => setTimeout(resolve, 100));
+        }
+      });</script>`;
+      await new Promise((resolve, reject) => {
+        const timeout = setTimeout(() => finish(new Error("Plotly did not render")), 10000);
+        const abort = () => finish(signal.reason);
+        function finish(error) {
+          clearTimeout(timeout);
+          window.removeEventListener("message", ready);
+          signal.removeEventListener("abort", abort);
+          if (error) reject(error); else resolve();
+        }
+        function ready(event) {
+          if (event.source === frame.contentWindow && event.data?.archiveReady === token) finish();
+        }
+        window.addEventListener("message", ready);
+        signal.addEventListener("abort", abort, {once:true});
+        if (signal.aborted) abort();
+        else frame.srcdoc = html.replace("</head>", script + "</head>");
+      });
+      if (request !== state.frameRequest) return;
+    } else frame.srcdoc = html;
+    $("plot-empty").hidden = true;
+    $("open-plot").href = source;
+    // Raw GitHub HTML is text/plain and is displayed through srcdoc.
+    $("open-plot").hidden = historical?.entry.storage === "git-history";
   } catch (error) {
     if (error.name !== "AbortError" && request === state.frameRequest) emptyPlot("failedTitle", "failedDescription");
   }
@@ -690,12 +818,12 @@ async function refresh() {
       const signature = JSON.stringify(history);
       if (signature !== state.manifestSignature) {
         state.manifestSignature = signature; state.history = history;
-        if (resetHistory) {
+        if (resetHistory && state.mode !== "calendar") {
           state.mode = "latest"; state.historyId = null; state.plotId = null;
           showHistory(false);
         }
-        renderHistory(); renderViewer();
-      } else if (!state.frameUrl) renderViewer();
+        renderHistory(); if (state.mode !== "calendar") renderViewer();
+      } else if (!state.frameUrl && state.mode !== "calendar") renderViewer();
     }
     if (results[1].status === "fulfilled") { state.status = results[1].value; renderStatus(); }
     if (results[2].status === "fulfilled") renderTemperature(); // Also catch a changed display timezone.
@@ -704,4 +832,151 @@ async function refresh() {
     renderConnection();
   } finally { refreshing = false; }
 }
+const archive = {calendar:null, date:"", chunks:[], entry:null, manifest:null, message:"archiveChoose", count:null};
+let archiveAbort;
+
+function leaveCalendar(mode) {
+  if (state.mode === "calendar") {
+    archiveAbort?.abort();
+    if (archive.message === "archiveLoading") archive.message = "archiveChoose";
+  }
+  state.mode = mode;
+  renderCalendar();
+  renderStatus();
+}
+
+function archiveRequest() {
+  archiveAbort?.abort();
+  archiveAbort = new AbortController();
+  const request = archiveAbort;
+  return {signal:AbortSignal.any([request.signal, AbortSignal.timeout(15000)]),
+          active:() => state.mode === "calendar" && archiveAbort === request && !request.signal.aborted};
+}
+
+async function archiveJson(path, signal) {
+  const response = await fetch(CONFIG.dataRoot + "archive/" + path, {signal, cache:"no-cache"});
+  if (!response.ok) throw new Error(String(response.status));
+  return response.json();
+}
+
+function limaToday() {
+  const parts = new Intl.DateTimeFormat("en-CA", {timeZone:"America/Lima", year:"numeric",
+    month:"2-digit", day:"2-digit"}).formatToParts();
+  const date = Object.fromEntries(parts.map(part => [part.type, part.value]));
+  return `${date.year}-${date.month}-${date.day}`;
+}
+
+function renderCalendar() {
+  const enabled = state.mode === "calendar";
+  $("archive-controls").hidden = !enabled;
+  if (!enabled) return;
+  const available = Object.entries(archive.calendar?.days || {}).sort(([a], [b]) => b.localeCompare(a));
+  $("archive-date").max = limaToday();
+  $("archive-date").value = archive.date;
+  const days = $("archive-days");
+  days.replaceChildren(new Option(I18N.archiveChoose, ""));
+  for (const [date, count] of available) days.add(new Option(`${date} · ${t("archiveCount", {count})}`, date));
+  days.value = Object.hasOwn(archive.calendar?.days || {}, archive.date) ? archive.date : "";
+  const selector = $("archive-chunk");
+  selector.replaceChildren(new Option(I18N.archiveChunk, ""));
+  for (const entry of archive.chunks) {
+    const time = entry.timestamp.slice(11, 19);
+    const groups = [...new Set([...entry.panels, ...(entry.legacy?.panels || [])]), ...(entry.summary ? [I18N.summaryView] : [])];
+    selector.add(new Option(`${time} · ${entry.id} · ${groups.join(", ")}`, entry.id));
+  }
+  selector.value = archive.entry?.id || "";
+  selector.disabled = !archive.chunks.length;
+  const version = $("archive-version");
+  const selected = archive.chunks.find(entry => entry.id === archive.entry?.id);
+  version.parentElement.hidden = !selected?.legacy;
+  version.replaceChildren(new Option(I18N.archiveAnalyzer, "current"), new Option(I18N.archiveLegacy, "legacy"));
+  version.value = archive.entry?.storage === "git-history" ? "legacy" : "current";
+  $("archive-status").textContent = archive.message ? I18N[archive.message]
+    : archive.count === null ? "" : t("archiveCount", {count:archive.count});
+}
+
+function archiveUpdate() {
+  renderCalendar();
+  renderViewer();
+}
+
+async function openCalendar() {
+  state.mode = "calendar";
+  showHistory(false);
+  renderStatus();
+  if (archive.calendar) {
+    if (archive.date && !archive.chunks.length) await loadArchiveDay(archive.date);
+    else archiveUpdate();
+    return;
+  }
+  const request = archiveRequest();
+  archive.message = "archiveLoading";
+  archiveUpdate();
+  try {
+    const calendar = await archiveJson("calendar.json", request.signal);
+    if (!request.active()) return;
+    if (calendar.version !== 1 || calendar.timezone !== "America/Lima" || !calendar.days) {
+      throw new Error("Invalid archive calendar");
+    }
+    archive.calendar = calendar;
+    if (archive.date) await loadArchiveDay(archive.date);
+    else {
+      archive.message = "archiveChoose";
+      archiveUpdate();
+    }
+  } catch {
+    if (request.active()) {
+      archive.message = "archiveFailed";
+      archiveUpdate();
+    }
+  }
+}
+
+async function loadArchiveDay(date) {
+  const request = archiveRequest();
+  Object.assign(archive, {date, chunks:[], entry:null, manifest:null, count:null});
+  const time = Date.parse(date + "T00:00:00Z");
+  if (!date) archive.message = "archiveChoose";
+  else if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !Number.isFinite(time)
+           || new Date(time).toISOString().slice(0, 10) !== date || date > limaToday()) archive.message = "archiveInvalid";
+  else if (!archive.calendar) {
+    await openCalendar();
+    return;
+  } else if (!Object.hasOwn(archive.calendar.days, date)) archive.message = "archiveEmpty";
+  else archive.message = "archiveLoading";
+  archiveUpdate();
+  if (archive.message !== "archiveLoading") return;
+  try {
+    const day = await archiveJson(`days/${date}.json`, request.signal);
+    if (!request.active()) return;
+    if (day.version !== 1 || day.date !== date || !Array.isArray(day.chunks)) throw new Error("Invalid archive day");
+    archive.chunks = [...day.chunks].sort((a, b) => Date.parse(b.timestamp) - Date.parse(a.timestamp));
+    archive.count = archive.chunks.length;
+    archive.message = archive.count ? null : "archiveEmpty";
+  } catch {
+    if (request.active()) archive.message = "archiveFailed";
+  }
+  if (request.active()) archiveUpdate();
+}
+
+async function chooseArchiveChunk(id, version = "current") {
+  const request = archiveRequest();
+  const selected = archive.chunks.find(entry => entry.id === id);
+  archive.entry = (version === "legacy" ? selected?.legacy : selected) || null;
+  archive.manifest = null;
+  archive.message = archive.entry ? "archiveLoading" : "archiveChunk";
+  archiveUpdate();
+  if (!archive.entry) return;
+  try {
+    const loader = await import("./archive_loader.mjs");
+    const manifest = await loader.archiveManifest(archive.entry, {signal:request.signal});
+    if (!request.active()) return;
+    archive.manifest = {...manifest, timestamp:archive.entry.timestamp};
+    archive.message = null;
+  } catch {
+    if (request.active()) archive.message = "archiveFailed";
+  }
+  if (request.active()) archiveUpdate();
+}
+
 initialize();
