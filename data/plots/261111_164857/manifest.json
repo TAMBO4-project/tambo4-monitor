@@ -1,0 +1,289 @@
+{
+  "id": "261111_164857",
+  "timestamp": "2026-11-11T16:48:57-05:00",
+  "analyzed_at": "2026-11-20T22:13:19+00:00",
+  "analysis_source": "chunk-merged",
+  "valid_channels": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "panel_sets": {
+    "A": {
+      "state": "unavailable",
+      "reason": "not_analyzed",
+      "plots": []
+    },
+    "B": {
+      "state": "unavailable",
+      "reason": "not_analyzed",
+      "plots": []
+    },
+    "C": {
+      "state": "unavailable",
+      "reason": "not_analyzed",
+      "plots": []
+    },
+    "D": {
+      "state": "unavailable",
+      "reason": "not_analyzed",
+      "plots": []
+    },
+    "A-B": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 5
+    },
+    "A-C": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 0
+    },
+    "A-D": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 1
+    },
+    "B-C": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 5
+    },
+    "B-D": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 5
+    },
+    "C-D": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 1
+    },
+    "A-B-C": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 0
+    },
+    "A-B-D": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 0
+    },
+    "A-C-D": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 0
+    },
+    "B-C-D": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 2
+    },
+    "A-B-C-D": {
+      "state": "ready",
+      "plots": [
+        {
+          "id": "adc_peak",
+          "filename": "adc_peak.html"
+        },
+        {
+          "id": "charge",
+          "filename": "charge.html"
+        },
+        {
+          "id": "time_difference",
+          "filename": "time_difference.html"
+        },
+        {
+          "id": "waveforms",
+          "filename": "waveforms.html"
+        }
+      ],
+      "events": 0
+    }
+  },
+  "summary": {
+    "state": "ready",
+    "plots": [
+      {
+        "id": "coincidence_totals",
+        "filename": "coincidence_totals.html"
+      },
+      {
+        "id": "coincidences_by_chunk",
+        "filename": "coincidences_by_chunk.html"
+      }
+    ]
+  }
+}
