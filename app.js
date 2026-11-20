@@ -881,8 +881,7 @@ function renderCalendar() {
   selector.replaceChildren(new Option(I18N.archiveChunk, ""));
   for (const entry of archive.chunks) {
     const time = entry.timestamp.slice(11, 19);
-    const groups = [...new Set([...entry.panels, ...(entry.legacy?.panels || [])]), ...(entry.summary ? [I18N.summaryView] : [])];
-    selector.add(new Option(`${time} · ${entry.id} · ${groups.join(", ")}`, entry.id));
+    selector.add(new Option(time, entry.id));
   }
   selector.value = archive.entry?.id || "";
   selector.disabled = !archive.chunks.length;
